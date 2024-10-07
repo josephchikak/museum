@@ -51,7 +51,7 @@ const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, 
         <motion.div
           initial={{opaity: 0, y: 15 }}
           animate={{opaity: 1, y: 0 }}
-          exit={{opaity: 0, y: 10 }}
+          // exit={{opaity: 0, y: 10 }}
           style={{x: '-50%'}}
           transition={{duration: 0.2, ease: 'easeOut'}}
           className='absolute left-1/2 top-12  text-white z-10'>
