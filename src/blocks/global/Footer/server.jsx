@@ -39,7 +39,7 @@ const FooterServer = async() => {
       
             </div> 
 
-            <p className='text-background w-[50%] font-light mt-4 text-[0.75rem]'>
+            <p className='text-background sm:w-[50%] font-light mt-4 text-[0.75rem]'>
               {footer["copyrightNot ice"]}
             </p>
               
