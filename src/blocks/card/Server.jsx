@@ -128,7 +128,7 @@ const open = openCard && cardID === id
                   <span className='font-light'>{identifiers}</span>
                  </p>
 
-                 <Link className='visible sm:invisible' href={file.url} download>Download the pdf</Link>
+                 <Link className='visible sm:invisible font-bold text-underline' target="_blank" href={file.url} download>Download the pdf</Link>
 
               
              
@@ -141,9 +141,9 @@ const open = openCard && cardID === id
                       
              </div>
             {open ? 
-                <div className='w-[100vw] sm:w-[80%]  h-[100vh] relative bg-background'>
+                <div className='w-[100vw] sm:visible invisible sm:w-[80%]  h-[100vh] relative bg-background'>
                   
-                  <iframe className='sm:visible invisible' onLoad={()=>setLoad(true)} id='pdfEmbed' src={file.url} type="application/pdf" width='90%' height='100%' />
+                  <iframe className='' onLoad={()=>setLoad(true)} id='pdfEmbed' src={file.url} type="application/pdf" width='90%' height='100%' />
                 
                   {
                   
