@@ -106,6 +106,7 @@ const LandingPage = () => {
           <div className='relative border-black flex text-[0.7rem] md:text-[1rem] h-[100%]  lg:w-[50vw] '>
        
             
+          <Link href='/manuscripts' className="">
 
               <div className='manuscripts bg-background border-[0.5px] relative border-black w-[100%] h-[100%] p-[0.75rem] flex flex-col gap-6 '>
                   <Link href='/manuscripts' className="">
@@ -127,19 +128,21 @@ const LandingPage = () => {
                       This is a brief description of what is in the file
                    </p>
 
-                   <Link href='/manuscripts'> 
+                   <div> 
                         <motion.svg
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
                           className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
-                    </Link>
+                    </div>
 
               </div>
+         </Link>
 
 
 
+         <Link href='/intelligence_reports'>
               <div className='intelligent relative bg-background border-[0.5px] border-black  w-[100%] h-[100%]  p-[0.75rem] flex flex-col gap-6 '>
                 <Link href='/intelligence_reports'>
                     <motion.div 
@@ -160,17 +163,21 @@ const LandingPage = () => {
                   <p className=" font-light font-old text-[0.75rem] md:text-[16px]">
                       This is a brief description of what is in the file
                    </p>
-                   <Link href='/intelligence_reports'> 
+                   <div > 
                         <motion.svg
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
                           className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
-                    </Link>
+                    </div>
                 
                </div>
+           </Link>
 
+
+           <Link href='/maps'>
+          
               <div className='maps relative bg-background border-[0.5px] border-black  w-[100%] h-[100%] p-[0.75rem] flex flex-col gap-6'>
                   <Link href='/maps'>
                       <motion.div
@@ -191,16 +198,18 @@ const LandingPage = () => {
                       This is a brief description of what is in the file
                    </p>
 
-                   <Link href='/maps'> 
+                   <div > 
                         <motion.svg
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
                           className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
-                    </Link>
+                    </div>
                 
               </div>
+          </Link>
+
           </div>
          </div>
 

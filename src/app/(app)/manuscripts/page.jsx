@@ -52,7 +52,7 @@ const Pages = async() => {
 
   return (
     <>
-      <div className='w-[100vw] h-fit relative flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
+      <div className='w-[100vw] h-[100vh]  relative flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
 
         <div className='flex justify-between flex-col'>
 

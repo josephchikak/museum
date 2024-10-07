@@ -24,8 +24,8 @@ const FooterServer = async() => {
 
   return (
     <>
-      <div className='w-[100vw] h-fit flex justify-between bg-primary border-black border-t-[1px] flex-col gap-4 sm:flex-row p-8 '>
-
+      <div className='w-[100vw] absolute bottom-0 h-fit flex justify-between bg-primary border-black border-t-[1px] flex-col gap-4 sm:flex-row p-8 '>
+ 
         <div className='flex justify-between flex-col gap-4'>
 
           <div className='h-fit w-fit text-background flex flex-col gap-4 z-10 text-[0.75rem] uppercase'>
@@ -39,13 +39,15 @@ const FooterServer = async() => {
       
             </div> 
 
-            <p className='text-background  font-light mt-4 text-[0.75rem]'>
+            <p className='text-background w-[50%] font-light mt-4 text-[0.75rem]'>
               {footer["copyrightNot ice"]}
             </p>
-
-            <p className='text-background  font-light mt-4 text-[0.75rem]'>
-              Designed and developed by Uzoma Studio
-            </p>
+              
+            <Link href='https://uzoma.studio/'>
+              <p className='text-background  font-light mt-4 text-[0.75rem]'>
+                Designed and developed by Uzoma Studio
+              </p>
+            </Link>
             
          
 

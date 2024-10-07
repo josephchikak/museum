@@ -17,6 +17,8 @@ const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, 
   const showFlyout = open && FlyoutContent
 
   const handleEnter = () =>{
+    // setOpen(false)
+
     if(href === '/intelligence_reports'){
       updateSections(intelligence_reports)
    }else if (href === '/manuscripts'){
@@ -29,7 +31,8 @@ const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, 
         updateSections({docs:[]})
       }
 
-      setOpen(true)
+    setOpen(true)
+
     }
 
 
@@ -49,11 +52,13 @@ const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, 
 
       {showFlyout && (
         <motion.div
-          initial={{opaity: 0, y: 15 }}
-          animate={{opaity: 1, y: 0 }}
+          initial={{opaity: 0, y: 10 }}
+          animate={{opaity: 1, y: -6 }}
           // exit={{opaity: 0, y: 10 }}
-          style={{x: '-50%'}}
-          transition={{duration: 0.2, ease: 'easeOut'}}
+          style={{x: '-50%',
+                  // y: '-'          
+        }}
+          transition={{duration: 0.5, ease: 'easeOut',  type: "spring"}}
           className='absolute left-1/2 top-12  text-white z-10'>
 
             {/* <div className='absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-primary'/> */}
@@ -90,7 +95,7 @@ const [navOpen, setNavOpen] = useState(false)
       {
         sections !== undefined && sections.docs.length ?
       
-        <div className='h-fit w-[18vw] p-7 relative  left-1/2 -top-1  bg-background text-primary flex flex-col gap-4 z-10 text-[0.75rem]'>
+        <div className='h-fit w-[20vw] p-7 relative  left-1/2 -top-1  bg-background text-primary flex flex-col gap-4 z-10 text-[0.75rem]'>
             <div className='absolute -top-6 left-0 right-0 h-6 bg-primary'/>
 
             {/* <div className='absolute -top-10  h-10 w-10 bg-black'/> */}

@@ -35,7 +35,7 @@ const Page =  async({params}) => {
   return (
     <article>
 
-          <div className="h-[fit] w-[100vw] flex justify-start p-5 border-b-[1px] border-black ">
+          <div className=" h-[100vh] w-[100vw] flex justify-start p-5 border-b-[1px] border-black ">
                 <div className="w-[50vw] flex flex-col gap-8">   
                 {/* <Search pages={page}/> */}
       
