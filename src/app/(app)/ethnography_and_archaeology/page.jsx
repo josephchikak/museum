@@ -55,8 +55,8 @@ const Archaeology = () => {
 
         <div className='flex justify-between flex-col'>
 
-          <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[1rem]'>
-            <h2 className='text-[3rem] font-bold pb-2 text-black '>ETHNOGRAPHY AND ARCHAEOLOGY</h2>
+          <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
+            <h2 className='text-[2rem] sm:text-[3rem]font-bold pb-2'>ETHNOGRAPHY AND ARCHAEOLOGY</h2>
 
             <h2>COMING SOON</h2>
             <Pages/>

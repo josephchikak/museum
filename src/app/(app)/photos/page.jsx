@@ -43,8 +43,8 @@ return (
 
      <div className='flex justify-between flex-col'>
 
-       <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[1rem]'>
-         <h2 className='text-[3rem] uppercase font-bold pb-2 text-black'>Photo gallery</h2>
+       <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
+         <h2 className='text-[2rem] sm:text-[3rem] uppercase font-bold pb-2'>Photo gallery</h2>
 
          {/* <Image /> */}
              <p>Page description will be written here</p>                

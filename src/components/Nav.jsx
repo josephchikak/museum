@@ -119,7 +119,7 @@ const [navOpen, setNavOpen] = useState(false)
     // console.log(intelligence_reports)
    
   
-      return <div className=' h-[50vw] sm:h-fit sm:w-[18vw] p-7 relative bg-primary text-background flex flex-col gap-4 z-1 text-[0.75rem]'>
+      return <div className=' h-fit sm:h-fit sm:w-[18vw] p-7 relative bg-primary text-background flex flex-col gap-4 z-1 text-[0.75rem]'>
         {/* {navOpen : */}
             <div className='absolute -top-6 left-0 right-0 h-6 bg-background'/>
 
@@ -178,7 +178,7 @@ const [navOpen, setNavOpen] = useState(false)
             {/* <li> </li> */}
         </nav>
 
-        <nav className='visible sm:invisible w-fit absolute right-0 pr-2 z-10'>
+        <nav className='visible sm:invisible w-fit absolute right-0 pr-2 z-20'>
           {navOpen ? 
           <>
              <svg onClick={() => setNavOpen(!navOpen)} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1D1911"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
@@ -195,7 +195,7 @@ const [navOpen, setNavOpen] = useState(false)
             >
                <ul className='flex gap-4 absolute flex-col right-0 z-10 bg-background p-2 w-[50vw] items-between h-fit text-[0.75rem]'>
                   <li className='bg-primary text-background p-2 rounded-md' onClick={() => setNavOpen(false)}>
-                    <FlyoutLink href='/#museum'>
+                    <FlyoutLink href='/#museum' onClick={() => setNavOpen(false)}>
                         THE MUSEUM
                     </FlyoutLink>
                   </li>

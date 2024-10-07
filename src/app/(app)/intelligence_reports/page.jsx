@@ -71,8 +71,8 @@ const IntelligenceReports = () => {
 
         <div className='flex justify-between flex-col'>
 
-          <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[1rem]'>
-            <h2 className='text-[3rem] font-bold pb-2 text-black'>INTELLIGENCE REPORTS</h2>
+          <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
+            <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2'>INTELLIGENCE REPORTS</h2>
 
             <Image
                 style={{objectFit: "contain"}}
@@ -83,7 +83,7 @@ const IntelligenceReports = () => {
                     
           <div className='pb-8 flex flex-col gap-2'>
 
-            <h2 className='font-bold text-[1.5rem]'>SECTIONS</h2>
+            <h2 className='font-bold text-[1rem]'>SECTIONS</h2>
             <Pages/>
 
           </div>

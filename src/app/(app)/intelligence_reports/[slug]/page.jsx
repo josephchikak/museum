@@ -68,7 +68,7 @@ const Page =  async({ params}) => {
                 </div>
  
     <div className='w-[100vw] overflow-hidden h-[100%] font-inter flex flex-col gap-4 p-8'>
-         <h1 className='text-[3rem] font-bold pb-8 uppercase' >{page.internalName}</h1>
+         <h1 className='sm:text-[3rem] text-[2rem] font-bold pb-8 uppercase' >{page.internalName}</h1>
    
           <div className='flex gap-2' >
                <RenderBlocks blocks={page.pageSection.layout}/>

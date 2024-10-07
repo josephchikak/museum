@@ -114,7 +114,7 @@ const LandingPage = () => {
                                         scaleX: 1.5,
                                         x: -8
                           }}
-                            className="absolute -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] rounded-t-md lg:rounded-r-none lg:rounded-l-md"/>              
+                            className="absolute invisible lg:visible -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] rounded-t-md lg:rounded-r-none lg:rounded-l-md"/>              
                       </Link>
                       <div   className="bg-k.c h-1/2 bg-fit bg-cover bg-center w-auto"/>
                   {/* <Image width={400} height={400} className=" " src="/assets/Africa Art Ema Studios.jpg" alt="" /> */}
@@ -132,7 +132,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </Link>
 
@@ -147,7 +147,7 @@ const LandingPage = () => {
                             scaleX: 1.5,
                             x: -8
                         }}
-                      className="absolute -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] lg:rounded-l-md  lg:rounded-r-none  rounded-t-md "/> 
+                      className="absolute invisible lg:visible -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] lg:rounded-l-md  lg:rounded-r-none  rounded-t-md "/> 
                   </Link>
                       <div className="bg-intelligence h-1/2 bg-fit bg-cover bg-center w-auto"/>
                         
@@ -165,7 +165,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </Link>
                 
@@ -178,7 +178,7 @@ const LandingPage = () => {
                           scaleX: 1.5,
                           x: -8
                         }}
-                      className="absolute -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] rounded-t-md  lg:rounded-r-none  lg:rounded-l-md"/>
+                      className="absolute invisible lg:visible -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] rounded-t-md  lg:rounded-r-none  lg:rounded-l-md"/>
                   </Link>
                       <div className="bg-maps h-1/2 bg-cover bg-center w-auto"/>
 
@@ -196,7 +196,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </Link>
                 
