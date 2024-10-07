@@ -47,12 +47,12 @@ const open = openCard && cardID === id
            <AnimatePresence>
 
 
-            <div id={id} className="flex sm:flex-row flex-col border-black border-[1px]  font-inter transition-all font-light  p-2 gap-4 cursor-pointer bg-background"
+            <div id={id} className="flex sm:flex-row flex-col justify-between border-black border-[1px]  font-inter transition-all font-light  p-2 gap-4 cursor-pointer bg-background"
    
                     onClick={()=> handleOpen(id)}
                      style={{ 
                       width: open ? '100vw' : '180px',
-                      height:  open ? 'fit-content' : '400px',
+                      height:  open ? 'fit-content' : '350px',
                       position:  open ? 'absolute' : 'relative',
                       zIndex: open ? 100 : 0,
                       left: 0,
@@ -63,7 +63,7 @@ const open = openCard && cardID === id
             >
 
 
-             <div className='flex flex-col gap-8 w-[150px] min-w-0 h-[100%] justify-between truncate'>
+             <div className='flex flex-col gap-8 w-[150px] min-w-0 h-[100%] justify-between relative '>
              <Image  width={100} height={100} className="" src={image.url} alt="" />
             
 
@@ -71,7 +71,7 @@ const open = openCard && cardID === id
                 <p className=" w-[10px] text-[0.75rem] inline-block truncate"> {description}</p>
             {/* </div> */}
 
-            <div className="flex justify-between p-4 ">
+            <div className="flex justify-between p-4  bottom-2 ">
                 <p>{year}</p>
 
                 {/* <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg> */}
