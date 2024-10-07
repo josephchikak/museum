@@ -1,0 +1,104 @@
+import React from 'react'
+import { getPayloadHMR } from '@payloadcms/next/utilities'
+import config from '@payload-config'
+import Link from 'next/link'
+import * as motion from "framer-motion/client"
+
+
+import Image from 'next/image'
+
+const Maps = () => {
+
+  const anim ={
+    initial: {
+      width:'100vw',
+      // x: '100vw'
+    },
+    open: {
+      width:'0',
+      // x: 0
+    },
+    closed :{
+      width:'100vw',
+    }
+  }
+
+
+   
+  const Pages = async() => {
+
+  
+
+    const payload = await getPayloadHMR({config})
+ 
+   const pages = await payload.find({
+     collection:'maps',
+     draft: false,
+     limit: 1000,
+ })
+ 
+   return (
+       <>
+           {
+               pages.docs.map((page,i) => { 
+                 return <Link key={i} className='border-background uppercase' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
+ 
+               })
+             }
+       
+       </>
+   )
+ }
+    
+
+  return (
+    <>
+      <div className='w-[100vw] h-[50vh]  flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
+
+        <div className='flex justify-between flex-col'>
+
+          <div className='h-fit w-fit  flex flex-col gap-4 z-10 text-[1rem]'>
+            <h2 className='text-[3rem] font-bold pb-2'>MAPS</h2>
+
+               <Image
+                style={{objectFit: "contain"}}
+                className=""
+                width={300} height={100}  src="/assets/Museum5.webp" alt="maps" />
+                
+                <p>Page description will be written here</p>                
+          
+            <Pages/>
+            </div> 
+
+
+        </div>
+
+        <motion.div 
+          variants={anim}
+          initial='initial'
+          animate='open'
+          exit='closed'
+          transition={{
+            duration: 0.5,
+            ease: 'easeOut'
+          }}
+
+          className='w-[100vw] bg-black h-[100vh] left-0 top-0 absolute'>
+
+
+      </motion.div>
+
+
+   
+
+
+  
+        
+
+        </div>
+
+    </>
+  )
+}
+
+export default Maps
