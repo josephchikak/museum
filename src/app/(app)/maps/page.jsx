@@ -53,7 +53,7 @@ const Maps = () => {
 
   return (
     <>
-      <div className='w-[100vw] h-[50vh]  flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
+      <div className='w-[100vw] h-fit  flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
 
         <div className='flex justify-between flex-col'>
 

@@ -43,16 +43,16 @@ const open = openCard && cardID === id
   return (
     <>
 
-         <div className='max-w-fit max-h-fit' id={id}>
+         {/* <div className='w-fit h-fit' id={id}> */}
            <AnimatePresence>
 
 
-            <div className=" flex border-black border-[1px] font-inter transition-all font-light  p-2 gap-4 cursor-pointer bg-background overflow-hidden"
+            <div id={id} className="flex sm:flex-row flex-col border-black border-[1px]  font-inter transition-all font-light  p-2 gap-4 cursor-pointer bg-background"
    
                     onClick={()=> handleOpen(id)}
                      style={{ 
-                      width: open ? '100vw' : '200px',
-                      height:  open ? '100vh' : '400px',
+                      width: open ? '100vw' : '180px',
+                      height:  open ? 'fit-content' : '400px',
                       position:  open ? 'absolute' : 'relative',
                       zIndex: open ? 100 : 0,
                       left: 0,
@@ -61,13 +61,19 @@ const open = openCard && cardID === id
                       cursor: 'pointer'
                      }}
             >
-             <div className='flex flex-col gap-4 w-fit h-fit'>
 
 
-            <Image  width={150} height={100} className="" src={image.url} alt="" />
-            <p className="w-[100%] h-[1--%] text-[0.75rem] break-words"> {description}</p>
+             <div className='flex flex-col gap-8 w-[150px] min-w-0 h-[100%] justify-between truncate'>
+             <Image  width={100} height={100} className="" src={image.url} alt="" />
+            
+
+            {/* <div className='w-[10px] inline-block min-w-0 h-[20px]'> */}
+                <p className=" w-[10px] text-[0.75rem] inline-block truncate"> {description}</p>
+            {/* </div> */}
+
             <div className="flex justify-between p-4 ">
                 <p>{year}</p>
+
                 {/* <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg> */}
                 {open ? 
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1D1911"><path d="m296-80-56-56 240-240 240 240-56 56-184-184L296-80Zm184-504L240-824l56-56 184 184 184-184 56 56-240 240Z"/></svg>
@@ -86,7 +92,7 @@ const open = openCard && cardID === id
               animate={{opaity: 1, y: 0 }}
               exit={{opaity: 0, y: 15 }}
               transition={{duration: 0.3, ease: 'easeOut'}}
-              className='columns-2 font-bold flex w-[30vw] text-[1rem] flex-col gap-4'>
+              className='columns-2 font-bold flex w-[30vw] text-[1rem] flex-col gap-4 bg-background'>
         
                  <p className='flex flex-col'>
                   Keyword: <br />
@@ -121,6 +127,9 @@ const open = openCard && cardID === id
                  Identifiers: <br />
                   <span className='font-light'>{identifiers}</span>
                  </p>
+
+                 <Link className='visible sm:invisible' href={file.url} download>Download the pdf</Link>
+
               
              
               </motion.div>
@@ -132,17 +141,17 @@ const open = openCard && cardID === id
                       
              </div>
             {open ? 
-                <div className='w-[100%] relative'>
+                <div className='w-[100vw] sm:w-[80%]  h-[100vh] relative bg-background'>
                   
-                  <embed onLoad={()=>setLoad(true)} id='pdfEmbed' src={file.url} type="application/pdf" width='90%' height='100%' />
-
+                  <iframe className='sm:visible invisible' onLoad={()=>setLoad(true)} id='pdfEmbed' src={file.url} type="application/pdf" width='90%' height='100%' />
+                
                   {
                   
                    loaded ?
                    <></>
                   :
 
-                  <div className='w-[100%] h-[100%] flex justify-center absolute top-0 items-center '>
+                  <div className='sm:visible invisible w-[100%] h-[100%] flex justify-center absolute top-0 items-center '>
                       
                         <div className="w-full h-full flex flex-col items-center justify-center gap-10">
                              <svg aria-hidden="true" className="w-10 h-10 text-primary  fill-blue-600 animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,7 +174,7 @@ const open = openCard && cardID === id
             </div>
             </AnimatePresence>
 
-        </div>
+        {/* </div> */}
         
 
 
