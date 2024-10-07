@@ -208,7 +208,7 @@ const [navOpen, setNavOpen] = useState(false)
                     </FlyoutLink>
                   </li>
 
-                  <li className='bg-primary text-background p-2  rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/' >
+                  <li className='bg-primary text-background p-2  rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/photos' >
                       PHOTOS
                     </FlyoutLink>
                   </li>
