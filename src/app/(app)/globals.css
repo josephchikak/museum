@@ -29,10 +29,10 @@ body,
   font-family: 'Inter';
   /* font-style: light; */
   /* position: fixed; */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  /* top: 0;
+  left: 0; */
+  /* width: 100%;
+  height: 100%; */
   box-sizing: border-box;
   background-color:  #FFFCF0;
   /* background-image: url('/assets/Graypapertexture.png') ; */
@@ -40,7 +40,7 @@ body,
   color: #1D1911;
   margin: 0;
 
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
   
 }
 

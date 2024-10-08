@@ -24,7 +24,7 @@ const FooterServer = async() => {
 
   return (
     <>
-      <div className='w-[100vw] absolute bottom-0 h-fit flex justify-around bg-primary border-black border-t-[1px] flex-col gap-4 sm:flex-row p-8 '>
+      <div className='w-[100vw] absolute bottom-0 h-fit flex justify-between bg-primary border-black border-t-[1px] flex-col gap-4 sm:flex-row p-8 '>
  
         <div className='flex justify-between flex-col gap-4'>
 
@@ -53,7 +53,7 @@ const FooterServer = async() => {
 
         </div>
 
-        <div className='flex h-[50] sm:h-[100%] w-fit gap-4 flex-col text-background' >
+        <div className='flex h-[50] justify-end sm:h-[100%] w-fit gap-4 flex-col text-background' >
 
             <div className='items-center h-fit flex'>
               <Image src={footer.logo.url} alt='logo' width={50} height={10} className=' sm:p-4 object-contain h-fit' />

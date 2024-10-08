@@ -95,7 +95,7 @@ const [navOpen, setNavOpen] = useState(false)
       {
         sections !== undefined && sections.docs.length ?
       
-        <div className='h-fit w-[20vw] p-7 relative  left-1/2 -top-1  bg-background text-primary flex flex-col gap-4 z-10 text-[0.75rem]'>
+        <div className='h-fit w-[20vw] p-7 relative  left-1/2 -top-1  bg-background text-primary flex flex-col gap-4 z-20 text-[0.75rem]'>
             <div className='absolute -top-6 left-0 right-0 h-6 bg-primary'/>
 
             {/* <div className='absolute -top-10  h-10 w-10 bg-black'/> */}
@@ -124,7 +124,7 @@ const [navOpen, setNavOpen] = useState(false)
     // console.log(intelligence_reports)
    
   
-      return <div className=' h-fit sm:h-fit sm:w-[18vw] p-7 relative bg-primary text-background flex flex-col gap-4 z-1 text-[0.75rem]'>
+      return <div className=' h-fit sm:h-fit sm:w-[18vw] p-7 relative bg-primary text-background flex flex-col gap-4 z-20 text-[0.75rem]'>
         {/* {navOpen : */}
             <div className='absolute -top-6 left-0 right-0 h-6 bg-background'/>
 
@@ -156,22 +156,23 @@ const [navOpen, setNavOpen] = useState(false)
 
 
   return (
-    <div className=' h-[5vh] w-[100w] font-inter font-light flex justify-center items-center text-primary  sm:text-[0.75rem] text-0.5 border-b-[1px] border-primary uppercase '>
+    <div className=' h-[5vh] w-[100vw] font-inter font-light flex justify-center items-center text-primary  sm:text-[0.75rem] text-0.5 border-primary uppercase '>
         <nav className='p-4 invisible sm:visible'>
           <ul className='flex gap-4 '>
+          <li>  <FlyoutLink href='/' >
+                HOME
+               </FlyoutLink>
+             </li>
             <li>
               <FlyoutLink href='/#museum'>
-                  THE MUSEUM
+                  ABOUT
               </FlyoutLink>
             </li>
             <li>  <FlyoutLink href='#' FlyoutContent={SECTIONS} >
                 SECTIONS
                </FlyoutLink>
              </li>
-             <li>  <FlyoutLink href='/' >
-                HOME
-               </FlyoutLink>
-             </li>
+           
 
              <li>  <FlyoutLink href='/photos' >
                 PHOTOS
@@ -199,17 +200,17 @@ const [navOpen, setNavOpen] = useState(false)
             // className='z-20'
             >
                <ul className='flex gap-4 absolute flex-col right-0 z-10 bg-background p-2 w-[50vw] items-between h-fit text-[0.75rem]'>
+                   <li className='bg-primary text-background p-2  rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/' >
+                      HOME
+                    </FlyoutLink>
+                  </li>
                   <li className='bg-primary text-background p-2 rounded-md' onClick={() => setNavOpen(false)}>
                     <FlyoutLink href='/#museum' onClick={() => setNavOpen(false)}>
-                        THE MUSEUM
+                        ABOUT
                     </FlyoutLink>
                   </li>
                   <li  className='bg-primary text-background p-2  rounded-md' >  <FlyoutLink href='#' FlyoutContent={SECTIONS} >
                       SECTIONS
-                    </FlyoutLink>
-                  </li>
-                  <li className='bg-primary text-background p-2  rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/' >
-                      HOME
                     </FlyoutLink>
                   </li>
 

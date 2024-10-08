@@ -26,9 +26,9 @@ const LandingPage = () => {
   return (
     <>
       
-        <div className='w-[100vw] h-[95vh] relative border-[1px] border-black flex flex-col lg:flex-row'>
+        <div className='w-[100%] h-[95vh] relative border-[1px] border-black flex flex-col lg:flex-row'>
        
-            <div className={`lg:w-[50%] w-[100%] h-[100%] relative border-[0.5px] font-inter text-wrap break-words flex flex-col pl-[1.5rem] pt-[1.5rem] text-[3rem] md:text-[4rem] lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0`}>
+            <div className="lg:w-[50vw] w-[100%] h-[100%] relative  font-inter text-wrap break-words p-[2rem] flex flex-col  text-[3rem] md:text-[4rem] lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
                     {/* <Image
                       alt="national museum"
                       src='/assets/National-Museum.webp'
@@ -88,27 +88,16 @@ const LandingPage = () => {
 
               </motion.div>
 
-              <div className="w-[100%] absolute top-[20%] -z-2 left-0  flex justify-center h-[100%] bg-[length:100px_100px]  sm:bg-[length:200px_200px] bg-no-repeat  bg-opacity-50 bg-center ">
-                {/* <video width="420" height="320" autoPlay muted loop preload="none" >
-                <source src="/assets/musuemVid.mp4" type="video/mp4" />
-                </video> */}
-
-              {/* <Image
-                style={{objectFit: "contain"}}
-                className="absolute top-1/3 -z-2"
-               width={700} height={100}  src="/assets/National-Museum.webp" alt="" />
-
-                 */}
-              </div>
+         
         
             </div>
      
-          <div className='relative border-black flex text-[0.7rem] md:text-[1rem] h-[100%]  lg:w-[50vw] '>
+          <div className='relative flex border-black text-[0.7rem] md:text-[1rem] h-[100%] lg:w-[50vw] '>
        
             
           <Link href='/manuscripts' className="">
 
-              <div className='manuscripts bg-background border-[0.5px] relative border-black w-[100%] h-[100%] p-[0.75rem] flex flex-col gap-6 '>
+              <div className='manuscripts   p-[1.5rem] bg-background border-[0.5px] relative border-black w-[100%] h-[100%] flex flex-col gap-6 '>
                   <Link href='/manuscripts' className="">
                               <motion.div
                           whileHover={{
@@ -133,7 +122,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-4 bottom-4" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </div>
 
@@ -143,7 +132,7 @@ const LandingPage = () => {
 
 
          <Link href='/intelligence_reports'>
-              <div className='intelligent relative bg-background border-[0.5px] border-black  w-[100%] h-[100%]  p-[0.75rem] flex flex-col gap-6 '>
+              <div className='intelligent relative  p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%]  flex flex-col gap-6 '>
                 <Link href='/intelligence_reports'>
                     <motion.div 
                         whileHover={{
@@ -168,7 +157,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-4 bottom-4" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </div>
                 
@@ -178,7 +167,7 @@ const LandingPage = () => {
 
            <Link href='/maps'>
           
-              <div className='maps relative bg-background border-[0.5px] border-black  w-[100%] h-[100%] p-[0.75rem] flex flex-col gap-6'>
+              <div className='maps relative p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%] flex flex-col gap-6'>
                   <Link href='/maps'>
                       <motion.div
                         whileHover={{
@@ -203,7 +192,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-2 bottom-2" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-4 bottom-4" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </div>
                 

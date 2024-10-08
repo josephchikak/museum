@@ -89,16 +89,22 @@ const HeaderServer = async() => {
 
   return (
     // <div>
-        <div className="sticky top-0  bg-background w-[100vw] z-20">
-          <div className='absolute p-2'>
-              <Link  href={'/'}>
-                  <Image src={header.logo.url} alt='logo' width={30} height={20}  className='object-contain'/>
-              </Link>
-          </div>
+        <div className="flex relative justify-center w-fit h-fit z-20">
+          {/* <div className='w-[100%] h-[100%] pl-4'> */}
+              {/* <div className='w-[100%] top-0 left-0 absolute flex items-center pl-4 h-[100%] overflow-hidden'> */}
+                  <Link  href={'/'} className=' top-0 left-0 absolute flex items-center pl-4  '>
+                      <Image src={header.logo.url} alt='logo' width={40} height={40} objectFit='contain' />
+                  </Link>
+              {/* </div> */}
+
+          {/* </div> */}
+        
 
                 
                <Nav className="" pages={header.nav} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports}/>
 
+
+          {/* <div></div> */}
         </div>
     // </div>
   )

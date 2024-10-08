@@ -41,7 +41,7 @@ const pages = await payload.find({
 // })
 
   return (
-    <main className="flex min-h-screen flex-col font-inter m-0">
+    <main className="min-h-screen w-[100vw] font-inter m-0 overflow-hidden">
       <LandingPage />
     </main>
   );
