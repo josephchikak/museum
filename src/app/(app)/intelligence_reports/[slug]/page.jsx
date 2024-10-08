@@ -60,13 +60,7 @@ const Page =  async({ params}) => {
   return (
     <article>
 
-          <div className="h-[fit] w-[100vw] flex justify-start p-5 border-b-[1px] border-black ">
-                <div className="w-[50vw] flex flex-col gap-8">   
-                {/* <Search pages={page}/> */}
-           
-                    </div>      
-                </div>
- 
+         
     <div className='w-fit min-h-[100vh]  overflow-hidden h-[100%] font-inter flex flex-col gap-4 p-8'>
          <h1 className='sm:text-[3rem] text-[2rem] font-bold pb-8 uppercase' >{page.internalName}</h1>
    

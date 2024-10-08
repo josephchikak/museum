@@ -156,7 +156,7 @@ const [navOpen, setNavOpen] = useState(false)
 
 
   return (
-    <div className=' h-[5vh] w-[100vw] font-inter font-light flex justify-center items-center text-primary  sm:text-[0.75rem] text-0.5 border-primary uppercase '>
+    <div className=' h-[5vh] w-[100vw] font-inter font-light flex justify-center items-center text-primary  sm:text-[0.75rem] text-0.5 border-b-[1px] border-primary uppercase '>
         <nav className='p-4 invisible sm:visible'>
           <ul className='flex gap-4 '>
           <li>  <FlyoutLink href='/' >
