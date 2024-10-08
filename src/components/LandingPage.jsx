@@ -26,7 +26,7 @@ const LandingPage = () => {
   return (
     <>
       
-        <div className='w-[100%] h-[95vh] relative border-[1px] border-black flex flex-col lg:flex-row'>
+        <div className='w-[100%] h-[90vh] relative border-[1px] border-black flex flex-col lg:flex-row'>
        
             <div className="lg:w-[50vw] w-[100%] h-[100%] relative  font-inter text-wrap break-words p-[2rem] flex flex-col  text-[3rem] md:text-[4rem] lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
                     {/* <Image
