@@ -100,17 +100,17 @@ const open = openCard && cardID === id
         
                  <p className='flex flex-col'>
                   Keyword: <br />
-                  <span className='font-light'>{keyword}</span>
+                  <span className='font-light font-old'>{keyword}</span>
                  </p>
 
                  <p className='flex flex-col'>
                   Condition: <br />
-                  <span className='font-light'>{condition}</span>
+                  <span className='font-light font-old'>{condition}</span>
                  </p>
 
                  <p className='flex flex-col'>
                   Location: <br />
-                  <span className='font-light'>{location}</span>
+                  <span className='font-light font-old'>{location}</span>
                  </p>
 
                  <p className='flex flex-col'>
@@ -124,12 +124,12 @@ const open = openCard && cardID === id
 
                  <p className='flex flex-col'>
                   Provenance: <br />
-                  <span className='font-light'>{provenance}</span>
+                  <span className='font-light font-old'>{provenance}</span>
                  </p>
 
                  <p className='flex flex-col'>
                  Identifiers: <br />
-                  <span className='font-light'>{identifiers}</span>
+                  <span className='font-light font-old'>{identifiers}</span>
                  </p>
 
                  <Link className='visible sm:invisible font-bold text-underline' target="_blank" href={file.url} download>Download the pdf</Link>
