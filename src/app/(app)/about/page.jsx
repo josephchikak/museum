@@ -59,9 +59,10 @@ return (
 
             </p>
 
-            <div className='bg-black w-full h-1/2'>
+            {/* <div className=' w-[200px] h-full'> */}
+              <Image src={'/assets/National-Museum.webp'} width={500} height={200}  objectFit='contain' loading='lazy'/>
 
-            </div>
+            {/* </div> */}
 
             {/* <video width="420" height="320" autoPlay muted loop preload="none" >
               <source src="/assets/museum.mp4" type="video/mp4" />
