@@ -63,12 +63,12 @@ const open = openCard && cardID === id
             >
 
 
-             <div className='flex flex-col gap-8 w-[150px] min-w-0 h-[100%] justify-between relative '>
+             <div className='flex flex-col gap-8 w-[100%] min-w-0 h-[100%] justify-between relative '>
              <Image  width={100} height={100} className="" src={image.url} alt="" />
             
 
             {/* <div className='w-[10px] inline-block min-w-0 h-[20px]'> */}
-                <p className=" w-[10px] text-[0.75rem] inline-block truncate"> {description}</p>
+                <p className=" text-[0.75rem] truncate"> {description}</p>
             {/* </div> */}
 
             <div className="flex justify-between p-4  bottom-2 ">
