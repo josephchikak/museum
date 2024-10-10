@@ -124,7 +124,7 @@ const [navOpen, setNavOpen] = useState(false)
     // console.log(intelligence_reports)
    
   
-      return <div className=' h-fit sm:h-fit sm:w-[18vw] p-7 relative bg-primary text-background flex flex-col gap-4 z-20 text-[0.75rem]'>
+      return <div className=' h-fit w-[50vw] sm:h-fit sm:w-[18vw] p-7 relative bg-primary text-background flex flex-col gap-4 z-20 text-[0.75rem]'>
         {/* {navOpen : */}
             <div className='absolute -top-6 left-0 right-0 h-6 bg-background'/>
 
@@ -164,7 +164,7 @@ const [navOpen, setNavOpen] = useState(false)
                </FlyoutLink>
              </li>
             <li>
-              <FlyoutLink href='/#museum'>
+              <FlyoutLink href='/about'>
                   ABOUT
               </FlyoutLink>
             </li>
@@ -190,22 +190,23 @@ const [navOpen, setNavOpen] = useState(false)
              <svg onClick={() => setNavOpen(!navOpen)} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1D1911"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
 
             <motion.div
-            initial={{opacity: 0, y: 15 }}
+
+            initial={{opacity: 0, y: 20 }}
             animate={{opacity: 1, y: 0 }}
-            // exit={{opaity: 0, y: 1 }}
+            exit={{opaity: 0, y: 10 }}
             style={{x: '-50%',
             // zIndex: 100,
             }}
             transition={{duration: 0.2, ease: 'easeOut'}}
             // className='z-20'
             >
-               <ul className='flex gap-4 absolute flex-col right-0 z-10 bg-background p-2 w-[50vw] items-between h-fit text-[0.75rem]'>
+               <ul className='flex gap-4 absolute flex-col right-0 z-10 bg-background p-2 w-[50vw] justify-around h-[30vh] text-[0.75rem]'>
                    <li className='bg-primary text-background p-2  rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/' >
                       HOME
                     </FlyoutLink>
                   </li>
                   <li className='bg-primary text-background p-2 rounded-md' onClick={() => setNavOpen(false)}>
-                    <FlyoutLink href='/#museum' onClick={() => setNavOpen(false)}>
+                    <FlyoutLink href='/about' onClick={() => setNavOpen(false)}>
                         ABOUT
                     </FlyoutLink>
                   </li>

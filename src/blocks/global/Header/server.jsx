@@ -92,13 +92,14 @@ const HeaderServer = async() => {
         <div className="flex relative justify-center w-fit h-fit z-20">
           {/* <div className='w-[100%] h-[100%] pl-4'> */}
               {/* <div className='w-[100%] top-0 left-0 absolute flex items-center pl-4 h-[100%] overflow-hidden'> */}
-                  <Link  href={'/'} className=' top-0 left-0 absolute flex items-start'
+                  <Link  href={'/'} className=' bottom-5 -top-5  sm:top-0 left-0 absolute flex items-start'
                    style={{
                     paddingLeft:'1rem',
-                    paddingTop: '5px'
+                    // paddingTop: '5px',
+                    // bottom: '4px'
                    }}
                   >
-                      <Image src={header.logo.url} alt='logo' width={40} height={40} objectFit='contain' />
+                      <Image src={header.logo.url} alt='logo' width={40} height={40} objectFit='cover' />
                   </Link>
               {/* </div> */}
 

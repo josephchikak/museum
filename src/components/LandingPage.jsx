@@ -10,6 +10,8 @@ import Search from './Search'
 import { animate } from "framer-motion"
 
 
+
+
 const LandingPage = () => {
 
 
@@ -28,7 +30,7 @@ const LandingPage = () => {
       
         <div className='w-[100%] h-[90vh] relative border-[1px] border-t-0 border-black flex flex-col lg:flex-row'>
        
-            <div className="lg:w-[50vw] w-[100%] h-[100%] relative  font-inter text-wrap break-words p-[2rem] flex flex-col  text-[3rem] md:text-[4rem] lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
+            <div className="lg:w-[50vw] w-[100%] h-[100%] relative  font-inter text-wrap  p-[2rem] flex flex-col  text-[3rem] md:text-[4rem] truncate lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
                     {/* <Image
                       alt="national museum"
                       src='/assets/National-Museum.webp'
@@ -97,7 +99,17 @@ const LandingPage = () => {
             
           <Link href='/manuscripts' className="">
 
-              <div className='manuscripts   p-[1.5rem] bg-background border-[0.5px] relative border-black w-[100%] h-[100%] flex flex-col gap-6 '>
+              <motion.div 
+                 whileHover={{
+                  backgroundColor:'#003300',
+                  color:'#FFFCF0',
+                  // scaleX: 1.5,
+                  x: -4
+              }}
+              transition={{ease:'easeInOut'}}
+
+                          
+              className='manuscripts   p-[1.5rem] bg-background border-[0.5px] relative border-black w-[100%] h-[100%] flex flex-col gap-6 '>
                   <Link href='/manuscripts' className="">
                               <motion.div
                           whileHover={{
@@ -126,13 +138,23 @@ const LandingPage = () => {
 
                     </div>
 
-              </div>
+              </motion.div>
          </Link>
 
 
 
          <Link href='/intelligence_reports'>
-              <div className='intelligent relative  p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%]  flex flex-col gap-6 '>
+              <motion.div 
+                       whileHover={{
+                        backgroundColor:'#003300',
+                        color:'#FFFCF0',
+                        // scaleX: 1.5,
+                        x: -4
+                    }}
+                    transition={{ease:'easeInOut'}}
+
+              
+                className='intelligent relative  p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%]  flex flex-col gap-6 '>
                 <Link href='/intelligence_reports'>
                     <motion.div 
                         whileHover={{
@@ -161,13 +183,22 @@ const LandingPage = () => {
 
                     </div>
                 
-               </div>
+               </motion.div>
            </Link>
 
 
            <Link href='/maps'>
           
-              <div className='maps relative p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%] flex flex-col gap-6'>
+              <motion.div
+                       whileHover={{
+                        backgroundColor:'#003300',
+                        color:'#FFFCF0',
+                        // scaleX: 1.5,
+                        x: -4
+                    }}
+                    transition={{ease:'easeInOut'}}
+              
+                className='maps relative p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%] flex flex-col gap-6'>
                   <Link href='/maps'>
                       <motion.div
                         whileHover={{
@@ -196,7 +227,7 @@ const LandingPage = () => {
 
                     </div>
                 
-              </div>
+              </motion.div>
           </Link>
 
           </div>
@@ -205,22 +236,26 @@ const LandingPage = () => {
 
 
        {/* about */}
-        <div id="museum" className="h-fit w-[100vw] bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex sm:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
+        <motion.div
+            initial={{opacity: 0, }}
+            whileInView={{opacity: 1,}}
+           //  viewport={{ once: true }}
+            transition={{duration: 0.3}}
+         id="museum" className="h-fit w-[100vw] bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex sm:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
 
-              <div className="h-[100%]  sm:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-2">
+              <div
+                 
+                 className="h-[100%]  sm:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-2">
 
                  <h2 className="font-inter font-bold sm:text-[5rem]"> THE MUSEUM </h2>
 
                   <p className="w-fit font-old text-[0.75rem] sm:text-[16px]">
                   NATIONAL MUSEUM ONIKAN, LAGOS NIGERIA <br />
                   <br />
-                  Formally referred to as Federal Department of Antiquities
-                  These include National Museum Onikan, Lagos which was opened to the general public in the year 1957
-                  Established at part of King George V. Memorial Park, situated beside the racecourse, the most attractive corner of Lagos Island.
-                  The museum structure is simple style built around grass covered quadrangle.
-                  The building carries a symbolic figure by the Nigerian sculptor, Ben Enwowu.  The figure, Anyanwu is of a young girl meant to be symbolic of the arising of Nigeria into the modern world
+                  National Museum Lagos is a specialized sub-sect operating under the National Commission for Museums and Monuments' umbrella body. This institution focuses on various specialized areas within the broader organizational framework, including public relations, research, education and development, marketing, and regional operations. Its goal is to bring the museum's offerings to the public, especially those unable to visit, thereby highlighting the importance, value, and pride embedded in Nigerian culture and heritage. The museum also conducts skills acquisition empowerment programs to create job opportunities and offers developmental courses for staff members.
                   </p>
                   <p className="w-fit text-[0.75rem]  font-old sm:text-[16px]">
+                  
                   Its goal is to bring the museum's offerings to the public, especially those unable to visit, thereby highlighting the importance, value, and pride embedded in Nigerian culture and heritage.
                   </p>
 
@@ -235,7 +270,7 @@ const LandingPage = () => {
 
           
 
-        </div>
+        </motion.div>
          <Search />
 
     

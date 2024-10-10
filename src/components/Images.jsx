@@ -29,7 +29,7 @@ const Images = () => {
 
       </Link>
 
-      <h1 className="absolute text-[3rem] top-[40%] left-[30px] font-bold font-inter z-10 sm:text-[8rem]">
+      <h1 className="absolute md:text-[5rem] text-[3rem] top-[40%] left-[30px] font-bold font-inter z-10 lg:text-[8rem]">
         PHOTO GALLERY
       </h1>
         <div className=" columns-2 flex w-[100%] p-20 h-[100%] relative">
