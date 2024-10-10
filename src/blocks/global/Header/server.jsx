@@ -97,7 +97,7 @@ const HeaderServer = async() => {
                     paddingLeft:'1rem',
                     // paddingTop: '5px',
                     // bottom: '4px'
-                   }}
+                   }}å
                   >
                       <Image src={header.logo.url} alt='logo' width={40} height={40} objectFit='cover' />
                   </Link>

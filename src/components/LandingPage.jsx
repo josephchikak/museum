@@ -106,7 +106,7 @@ const LandingPage = () => {
                   // scaleX: 1.5,
                   x: -4
               }}
-              transition={{ease:'easeInOut'}}
+              transition={{ease:'easeOut'}}
 
                           
               className='manuscripts   p-[1.5rem] bg-background border-[0.5px] relative border-black w-[100%] h-[100%] flex flex-col gap-6 '>
@@ -151,7 +151,7 @@ const LandingPage = () => {
                         // scaleX: 1.5,
                         x: -4
                     }}
-                    transition={{ease:'easeInOut'}}
+                    transition={{ease:'easeOut'}}
 
               
                 className='intelligent relative  p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%]  flex flex-col gap-6 '>
@@ -196,7 +196,7 @@ const LandingPage = () => {
                         // scaleX: 1.5,
                         x: -4
                     }}
-                    transition={{ease:'easeInOut'}}
+                    transition={{ease:'easeOut'}}
               
                 className='maps relative p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%] flex flex-col gap-6'>
                   <Link href='/maps'>
