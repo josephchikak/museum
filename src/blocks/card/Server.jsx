@@ -63,7 +63,11 @@ const open = openCard && cardID === id
             >
 
 
-             <div className='flex flex-col gap-8 w-[100%] min-w-0 h-[100%] justify-between relative '>
+             <div 
+              style={{
+                width: open ? '30%' : '100%'
+              }}
+              className='flex flex-col gap-8 w-[100%] min-w-0 h-[100%] justify-between relative '>
              <Image  width={100} height={100} className="" src={image.url} alt="" />
             
 
@@ -141,7 +145,7 @@ const open = openCard && cardID === id
                       
              </div>
             {open ? 
-                <div className='w-[100vw] sm:visible invisible sm:w-[80%]  h-[100vh] relative bg-background'>
+                <div className=' sm:visible invisible sm:w-[80%]  h-[100vh] relative bg-background'>
                   
                   <iframe className='' onLoad={()=>setLoad(true)} id='pdfEmbed' src={file.url} type="application/pdf" width='90%' height='100%' />
                 
