@@ -3,44 +3,57 @@ import { getPayloadHMR } from '@payloadcms/next/utilities'
 import config from '@payload-config'
 import Link from 'next/link'
 import * as motion from "framer-motion/client"
+import { algoliasearch } from 'algoliasearch';
+
+
 
 import Image from 'next/image'
 
-const Government = () => {
-  
-    const anim ={
-      initial: {
-        width:'100vw',
-        // x: '100vw'
-      },
-      open: {
-        width:'0',
-        // x: 0
-      },
-      closed :{
-        width:'100vw',
-      }
-    }
+const AlternativeHeritage = () => {
 
-   
+
+  const anim ={
+    initial: {
+      width:'100vw',
+      // x: '100vw'
+    },
+    open: {
+      width:'0',
+      // x: 0
+    },
+    closed :{
+      width:'100vw',
+    }
+  }
+
+
   const Pages = async() => {
 
-  
   
 
     const payload = await getPayloadHMR({config})
  
    const pages = await payload.find({
-     collection:'government_reports',
+     collection:'alternative_heritages',
      draft: false,
      limit: 1000,
  })
+
+    const client = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.NEXT_PUBLIC_ALGOLIA_WRITE_API_KEY);
+
+    // console.log(pages)
+
+    // const response = await client.saveObject({
+    //   indexName:`intelligence_reports${pages.slug}`,
+    //   body:pages
+    // })
+
  
    return (
        <>
            {
                pages.docs.map((page,i) => { 
-                 return <Link key={i} className='border-background uppercase' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
+                 return <Link key={i} className='border-background uppercase font-normal pb-2 text-[1rem]' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
  
                })
              }
@@ -49,20 +62,24 @@ const Government = () => {
    )
  }
     
+
+
+
   return (
     <>
-      <div className='w-[100vw] h-fit min-h-[100vh] flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
+      <div className='w-[100vw] h-[100vh] font-inter flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
 
         <div className='flex justify-between flex-col'>
 
-          <div className='h-fit w-fit text-primary flex flex-col gap-4 z-10 text-[0.75rem] sm:text-[1rem]'>
-            <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2 z-1'>GOVERNMENT</h2>
+          <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
+            <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2'>ALTERNATIVE ARCHIVAL HERITAGES</h2>
+
             <Image
                 style={{objectFit: "contain"}}
                 className=""
                 width={300} height={100}  src="/assets/Museum.webp" alt="maps" />
                 
-                <p className='font-playfair text-[18px]'>Page description will be written here</p>                
+                <p>Page description will be written here</p>                
                     
           <div className='pb-8 flex flex-col gap-2'>
 
@@ -74,10 +91,14 @@ const Government = () => {
             </div> 
 
 
+        
+            
+         
+
         </div>
 
-   
-        <motion.div 
+
+      <motion.div 
           variants={anim}
           initial='initial'
           animate='open'
@@ -92,6 +113,8 @@ const Government = () => {
 
       </motion.div>
 
+   
+
 
           {/* <Image src={footer.logo.url} alt='logo' width={64} height={20} className=' p-4 object-contain'/> */}
 
@@ -104,4 +127,4 @@ const Government = () => {
   )
 }
 
-export default Government
+export default AlternativeHeritage

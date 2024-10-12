@@ -72,6 +72,20 @@ const HeaderServer = async() => {
     limit: 1000,
   })
 
+  const alternative_heritages = await payload.find({
+    collection:'alternative_heritages',
+    draft: false,
+    limit: 1000,
+  })
+
+  const alternative_archival_heritages = await payload.find({
+    collection:'alternative_archival_heritages',
+    draft: false,
+    limit: 1000,
+  })
+
+
+
 
 
 
@@ -97,7 +111,7 @@ const HeaderServer = async() => {
                     paddingLeft:'1rem',
                     // paddingTop: '5px',
                     // bottom: '4px'
-                   }}å
+                   }}
                   >
                       <Image src={header.logo.url} alt='logo' width={40} height={40} objectFit='cover' />
                   </Link>
@@ -107,7 +121,7 @@ const HeaderServer = async() => {
         
 
                 
-               <Nav className="" pages={header.nav} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports}/>
+               <Nav className="" pages={header.nav} alternative_heritages={alternative_heritages} alternative_archival_heritages={alternative_archival_heritages} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports}/>
 
 
           {/* <div></div> */}

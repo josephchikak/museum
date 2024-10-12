@@ -22,6 +22,10 @@ import {Maps} from './collections/Maps'
 import { ArchaeologyAndEthnography } from './collections/ArchaeologyAndEthnography'
 import { GovernmentReports } from './collections/GovernmentReports'
 import { Photos } from './collections/Photos'
+import { AlternativeHeritage } from './collections/AlternativeHeritage'
+import { AlternativeArchivalHeritage } from './collections/AlternativeArchivalHeritage'
+
+
 
 
 
@@ -51,6 +55,8 @@ export default buildConfig({
      IntelligenceReports,
      ArchaeologyAndEthnography,
      GovernmentReports,
+     AlternativeHeritage,
+     AlternativeArchivalHeritage,
      Photos
     ],
   globals: [

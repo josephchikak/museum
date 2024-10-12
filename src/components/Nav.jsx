@@ -6,7 +6,7 @@ import { AnimatePresence, easeOut, motion } from "framer-motion"
 import useStore from '../utils/useStore'
 
 
-const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, manuscripts, government_reports}) =>{
+const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, manuscripts, government_reports, alternative_heritages, alternative_archival_heritages}) =>{
 
   const updateSections = useStore((state) => state.updateSections)
 
@@ -27,6 +27,10 @@ const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, 
       updateSections(maps)}
       else if (href === '/government_reports'){
         updateSections(government_reports)}
+        else if (href === '/alternative_heritages'){
+          updateSections(alternative_heritages)}
+          else if (href === '/alternative_archival_heritages'){
+            updateSections(alternative_archival_heritages)}
       else {
         updateSections({docs:[]})
       }
@@ -73,7 +77,7 @@ const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, 
 
 
 
-const Nav = ({pages, intelligence_reports, maps, manuscripts, government_reports}) => {
+const Nav = ({pages, intelligence_reports, maps, manuscripts, government_reports, alternative_heritages, alternative_archival_heritages}) => {
 
 // if( pages.)
 const [navOpen, setNavOpen] = useState(false)
@@ -85,10 +89,6 @@ const [navOpen, setNavOpen] = useState(false)
 
     const sections = useStore((state) => state.sections)
 
-
-    // console.log(sections.docs)
-
-    
 
     return (
       <>
@@ -137,12 +137,12 @@ const [navOpen, setNavOpen] = useState(false)
                     
                       navOpen ?
                        <li onClick={() => setNavOpen(false)}>
-                          <FlyoutLink  key={i} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports} className='hover:border-b-2 border-background' href={`/${page.link}`}> {page.label}</FlyoutLink>
+                          <FlyoutLink  key={i} alternative_archival_heritages={alternative_archival_heritages} alternative_heritages={alternative_heritages} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports} className='hover:border-b-2 border-background' href={`/${page.link}`}> {page.label}</FlyoutLink>
                      
                        </li> 
                        :
 
-                      <FlyoutLink key={i} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports} className='hover:border-b-2 border-background' href={`/${page.link}`} FlyoutContent={SUBSECTIONS}> {page.label}</FlyoutLink>
+                      <FlyoutLink key={i} alternative_heritages={alternative_heritages} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports} alternative_archival_heritages={alternative_archival_heritages} className='hover:border-b-2 border-background' href={`/${page.link}`} FlyoutContent={SUBSECTIONS}> {page.label}</FlyoutLink>
 
                     
               )

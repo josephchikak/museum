@@ -134,7 +134,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-4 bottom-4" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-4 bottom-4 hover:fill-background" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </div>
 
@@ -179,7 +179,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-4 bottom-4" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-4 bottom-4 hover:fill-background" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </div>
                 
@@ -223,7 +223,7 @@ const LandingPage = () => {
                              whileHover={{scale: 1.4,
                               rotate:'45deg'}}
                           transition={{ease: 'easeInOut', duration: 0.5}}
-                          className="absolute right-4 bottom-4" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+                          className="absolute right-4 bottom-4 hover:fill-background" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
 
                     </div>
                 

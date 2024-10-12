@@ -19,6 +19,8 @@ export interface Config {
     intelligence_reports: IntelligenceReport;
     ethnography_and_archaeology: EthnographyAndArchaeology;
     government_reports: GovernmentReport;
+    alternative_heritages: AlternativeHeritage;
+    alternative_archival_heritages: AlternativeArchivalHeritage;
     photos: Photo;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -225,6 +227,40 @@ export interface GovernmentReport {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "alternative_heritages".
+ */
+export interface AlternativeHeritage {
+  id: number;
+  internalName: string;
+  nav?:
+    | {
+        label?: string | null;
+        link?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "alternative_archival_heritages".
+ */
+export interface AlternativeArchivalHeritage {
+  id: number;
+  internalName: string;
+  nav?:
+    | {
+        label?: string | null;
+        link?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "photos".
  */
 export interface Photo {
@@ -272,6 +308,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'government_reports';
         value: number | GovernmentReport;
+      } | null)
+    | ({
+        relationTo: 'alternative_heritages';
+        value: number | AlternativeHeritage;
+      } | null)
+    | ({
+        relationTo: 'alternative_archival_heritages';
+        value: number | AlternativeArchivalHeritage;
       } | null)
     | ({
         relationTo: 'photos';
