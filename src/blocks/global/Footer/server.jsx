@@ -43,7 +43,7 @@ const FooterServer = async() => {
               {footer["copyrightNot ice"]}
             </p>
               
-            <Link href='https://uzoma.studio/'>
+            <Link href='https://uzoma.studio/' target='_blank'>
               <p className='text-background  font-light mt-4 text-[0.75rem]'>
                 Designed and developed by Uzoma Studio
               </p>
