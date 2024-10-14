@@ -47,14 +47,14 @@ return (
          <h2 className='text-[2rem] sm:text-[3rem] uppercase font-bold pb-2'>Photo gallery</h2>
 
          {/* <Image /> */}
-             <p>Page description will be written here</p>                
+             {/* <p>Page description will be written here</p>                 */}
                  
        <div className='p-8 columns-2 flex w-[100vw] h-fit justify-center gap-4'> 
 
           {
               pages.docs.map((page,i) => { 
                 return (
-                  <div id={page.id} className='flex flex-col justify-between p-8 gap-2 w-[40vw] h-[50vh] border-primary border-[5px] rounded-md bg-background'>
+                  <div id={page.id} className='flex flex-col justify-between p-8 gap-2 w-[40vw] h-[50vh] border-primary border-[1px] rounded-md bg-[#FFFDF5]'>
                       <div className='block relative w-[100%] h-[90%]'>
                          <Image
                              layout='fill'
@@ -65,13 +65,13 @@ return (
                               // width={500}
                               // height={500}
                         
-                            src={page.image.url} className='bg-background'/>
+                            src={page.image.url} className='bg-[#FFFDF5]'/>
         
                       </div>
                         
                      
         
-                        <p className='font-inter text-primary font-light'>{page.description}</p>
+                        <p className='font-inter font-light'>{page.description}</p>
         
                  </div>
                 )
