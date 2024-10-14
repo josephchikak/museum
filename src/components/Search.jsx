@@ -28,7 +28,7 @@ const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, proce
                 placeholder='Search Archives'
                 classNames={{
                 input:
-                "block w-full p-2  text-sm text-primary border-b border-primary bg-background focus:ring-primary focus:border-primary dark:text-background",
+                "block w-full p-2  text-sm text-primary border-b border-primary bg-[#FFFDF5] focus:ring-primary focus:border-primary dark:text-background",
                 submitIcon: 'absolute right-2 top-4 w-10',
                 form:'relative text-[0.75rem] font-light',
                 resetIcon:'hidden',

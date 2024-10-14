@@ -24,7 +24,7 @@ const FooterServer = async() => {
 
   return (
     <>
-      <div className='w-[100vw] absolute bottom-0 h-fit flex justify-between bg-primary border-black border-t-[1px] flex-col gap-4 sm:flex-row p-8 '>
+      <div className='w-[100vw] h-fit flex justify-between bg-primary border-black border-t-[1px] flex-col gap-4 sm:flex-row p-8 '>
  
         <div className='flex justify-between flex-col gap-4'>
 

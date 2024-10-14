@@ -62,7 +62,7 @@ const Images = () => {
                 className=""  src='/assets/National-Museum.webp'/>
           </div>
 
-          <div className="w-[100%] h-[150px] sm:-bottom-[150px] invisible sm:visible sm:left-[200px] -bottom-[20px] left-[10px]  absolute block">
+          <div className="w-[100%] h-[150px] sm:-bottom-[45px] invisible sm:visible sm:left-[200px] -bottom-[20px] left-[10px]  absolute block">
            
           <Image  
                   fill
@@ -78,7 +78,7 @@ const Images = () => {
                   fill
                   objectFit='contain'
                   // sizes="(max-width: 768px) 200px, (max-width: 1200px) 200px, 33vw "
-                className=""  src='/assets/Museum.webp'/>
+                className=""  src='/assets/alternative2.webp'/>
           </div>
          
          

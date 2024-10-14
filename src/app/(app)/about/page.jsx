@@ -39,25 +39,30 @@ const About = () => {
 
 return (
  <>
- <div className='flex flex-col'>
+ <div className='flex flex-col w-100% min-h-[100vh] h-fit px-10 overflow-hidden '>
 
-   <div className='w-[100vw] min-h-[100vh] h-[100%] font-inter flex justify-between bg-background border-black border-t-[1px] flex-col sm:flex-row p-8 columns-2 overflow-hidden'>
+   <div className='w-100% h-fit font-inter flex bg-background border-primary flex-col sm:flex-row columns-2 overflow-hidden'>
 
-        <div className="h-[100vh]  sm:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-2">
+        <div className="h-fit sm:w-1/2 flex flex-col gap-6 font-light w-full  p-8">
+          {/* <div className=''> */}
 
-          <h1 className="font-inter font-bold sm:text-[5rem]"> THE MUSEUM </h1>
+            <h1 className="font-inter font-bold sm:text-[5rem]"> THE MUSEUM </h1>
 
-            <p className="w-fit font-old text-[0.75rem] sm:text-[16px]">
-            NATIONAL MUSEUM LAGOS
-            <br />
-            <br />
+              <p className="w-fit font-old text-[0.75rem] sm:text-[16px] ">
+              NATIONAL MUSEUM LAGOS
+              <br />
+              <br />
 
-            National Museum Lagos is a specialized sub-sect operating under the National Commission for Museums and Monuments' umbrella body. This institution focuses on various specialized areas within the broader organizational framework, including public relations, research, education and development, marketing, and regional operations. Its goal is to bring the museum's offerings to the public, especially those unable to visit, thereby highlighting the importance, value, and pride embedded in Nigerian culture and heritage. 
-            </p>
-            <p className="w-fit text-[0.75rem]  font-old sm:text-[16px]">
-            The museum also conducts skills acquisition empowerment programs to create job opportunities and offers developmental courses for staff members.
+              National Museum Lagos is a specialized sub-sect operating under the National Commission for Museums and Monuments' umbrella body. This institution focuses on various specialized areas within the broader organizational framework, including public relations, research, education and development, marketing, and regional operations. Its goal is to bring the museum's offerings to the public, especially those unable to visit, thereby highlighting the importance, value, and pride embedded in Nigerian culture and heritage. 
+              </p>
+              <p className="w-fit text-[0.75rem]  font-old sm:text-[16px]">
+              The museum also conducts skills acquisition empowerment programs to create job opportunities and offers developmental courses for staff members.
 
-            </p>
+              </p>
+
+          {/* </div> */}
+
+         
 
             {/* <div className=' w-[200px] h-full'> */}
               <Image src={'/assets/National-Museum.webp'} width={500} height={200}  objectFit='contain' loading='lazy'/>
@@ -71,97 +76,7 @@ return (
 
         </div>
 
-        <div className="h-[100%]  sm:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-4">
-
-          <h2 className="font-inter sm:w-[80%] font-bold sm:text-[1.5rem] uppercase "> National Museum Lagos features three galleries: </h2>
-
-            <p className="w-fit font-old text-[0.75rem] sm:text-[16px]">
-                For social, cultural, and educational knowledge, National Museum Lagos features three galleries:
-                <br />
-                <span className='font-semibold text-[1rem] font-inter'>
-                - Unfading Asset of our Cultural Patrimony Gallery
-                <br />
-                - Nigerian Arts in the Cycle of Life Gallery
-                <br />
-                - Nigerian Government: Yesterday and Today
-                </span>
-              </p>
-
-            <h2 className="font-inter uppercase sm:first-line:w-[80%] font-bold sm:text-[1.5rem]">   Other services of the National Museum Lagos include: </h2>
-
-
-            <div className="w-fit flex flex-col gap-4 font-old text-[0.75rem] sm:text-[16px]">
-
-              <p>
-                  <span className='font-bold font-inter'>
-                    Conservation and Restoration Services:
-                    <br />
-                    </span>
-                    National Museum Lagos has a conservation labs where they preserve and restore artifacts and artworks.
-              </p>
-
-
-              <p>
-                  
-                    <span className='font-bold font-inter'>
-                    Retail Services:
-                    <br />
-                    </span>
-                    NML offers a gift shop where visitors can purchase cultural items, souvenirs, books, and other merchandise related to the museum's exhibits and collections.
-            
-              </p>
-                
-
-
-              <p>
-                  <span className='font-bold font-inter'>
-                  Educational Programs:
-                  <br />
-                  </span>
-                  Museums often offer educational workshops, lectures, and classes for visitors of all ages. These programs cover history, art, science, and more, tailored to students, adults, and families.
-
-              </p>
-
-                <p>
-                    <span className='font-bold font-inter'>
-                    Organized/Guided Tours:
-                    <br />
-                    </span>
-                    National Museum Lagos provides guided tours led by knowledgeable docents. These tours offer in-depth information about the exhibits and enhance the visitor experience. It is ooen to schools (primary, secondary, and higher institutions), religious groups, clubs, organizations, and associations.
-                </p>
-
-                <p>
-              <span className='font-bold font-inter'>
-              Children's Day Program:
-                <br />
-                </span>
-                Celebrated annually with cultural activities aimed at teaching the Nigerian identity, morals, beliefs, and values.
-
-              </p>
-
-              <p>
-      <span className='font-bold font-inter'>
-      Independence Day Celebration:
-      <br />
-      </span>
-      Celebrates Nigeria's independence with participants mimicking nationalist dress and receiving handmade Nigerian flags.
-
-  </p>
-
-    <p>
-        <span className='font-bold font-inter'>
-        Digital Resources: 
-        <br />
-        </span>
-        NML provides online access to parts of their collections, virtual tours, educational materials, and digital exhibitions, allowing broader access to their resources.
-
-    </p>
-              
-
-              </div>
-                
-        </div>
-
+     
         <motion.div 
             variants={anim}
             initial='initial'
@@ -172,75 +87,158 @@ return (
               ease: 'easeOut'
             }}
 
-            className='w-[100vw] bg-black h-[100vh] left-0 top-0 absolute'>
+            className='w-[100%] bg-black h-[100vh] left-0 top-0 absolute'>
 
 
         </motion.div>
 
     </div>
 
-<div className='w-[100vw] min-h-[100vh] h-[100%] font-inter flex justify-between bg-background border-black border-t-[1px]  flex-col sm:flex-row  p-8 columns-2 overflow-hidden'>
-  
-<div className="h-[100%] font-old  text-[0.75rem] sm:text-[16px] sm:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-4">
+    <div className='w-[100%] h-[100%] font-inter flex justify-between bg-background border-primary border-x-[1px] border-t-[1px]  flex-col sm:flex-row columns-2 overflow-hidden'>
+      <div className="h-[100%] sm:w-1/2 flex flex-col gap-6 font-light w-full p-8">
+
+            <h2 className="font-inter font-bold sm:text-[3rem] uppercase "> Activities </h2>
+
+            <h3 className="font-inter sm:w-[80%] font-bold sm:text-[1rem] uppercase text-primary"> National Museum Lagos features three galleries: </h3>
+
+              <p className="w-fit font-old text-[0.75rem] sm:text-[16px]">
+                  For social, cultural, and educational knowledge, National Museum Lagos features three galleries:
+                  <br />
+                  <span className='font-semibold font-inter'>
+                  - Unfading Asset of our Cultural Patrimony Gallery
+                  <br />
+                  - Nigerian Arts in the Cycle of Life Gallery
+                  <br />
+                  - Nigerian Government: Yesterday and Today
+                  </span>
+                </p>
+
+              <h2 className="font-inter uppercase sm:first-line:w-[80%] font-bold sm:text-[1rem] text-primary">   Other services of the National Museum Lagos include: </h2>
 
 
+              <div className="w-fit flex flex-col gap-4 font-old text-[0.75rem] sm:text-[16px]">
 
- 
-
-
-    <p>
-        <span className='font-bold font-inter'>
-        Digital Resources: 
-        <br />
-        </span>
-        NML provides online access to parts of their collections, virtual tours, educational materials, and digital exhibitions, allowing broader access to their resources.
-
-    </p>
+                <p>
+                    <span className='font-bold text-primary font-inter'>
+                      Conservation and Restoration Services:
+                      <br />
+                      </span>
+                      National Museum Lagos has a conservation labs where they preserve and restore artifacts and artworks.
+                </p>
 
 
-    <p>
-        <span className='font-bold font-inter'>
-        Cultural/Religious Festivals: 
-        <br />
-        </span>
-        NML organizes and participates in cultural festivals that celebrate different traditions, heritage, or religious values, bringing together diverse audiences. Some of such events are: 
-        <br />
-        ・Eid-Fitr Program: Celebrates the end of Ramadan with cultural activities that remind the populace of their heritage.
-        <br />
-        ・Christmas Program: Organized for children, featuring Christmas items, cultural activities, games, songs, and dances to celebrate the Yuletide season.
-        <br />
-        ・Cultural Day Program: Promotes Nigerian culture through various cultural activities, showcasing the unity in Nigeria's cultural diversity.
-
-    </p>
-
-
-    <p>
-              <span className='font-bold font-inter'>
-              Special Children Program: 
-                <br />
-                </span>
-                Invites children to the museum or takes the museum to them, teaching cultural practices, skills, and more, giving them a sense of societal belonging.
-                  s, beliefs, and values.
-
-          </p>
-
-
-          <p>
+                <p>
+                    
+                      <span className='font-bold text-primary font-inter'>
+                      Retail Services:
+                      <br />
+                      </span>
+                      NML offers a gift shop where visitors can purchase cultural items, souvenirs, books, and other merchandise related to the museum's exhibits and collections.
               
-                <span className='font-bold font-inter'>
-                Prison (Correctional Service) Outreach: 
+                </p>
+                  
+
+
+                <p>
+                    <span className='font-bold text-primary font-inter'>
+                    Educational Programs:
+                    <br />
+                    </span>
+                    Museums often offer educational workshops, lectures, and classes for visitors of all ages. These programs cover history, art, science, and more, tailored to students, adults, and families.
+
+                </p>
+
+                  <p>
+                      <span className='font-bold text-primary font-inter'>
+                      Organized/Guided Tours:
+                      <br />
+                      </span>
+                      National Museum Lagos provides guided tours led by knowledgeable docents. These tours offer in-depth information about the exhibits and enhance the visitor experience. It is ooen to schools (primary, secondary, and higher institutions), religious groups, clubs, organizations, and associations.
+                  </p>
+
+                  <p>
+                <span className='font-bold text-primary font-inter'>
+                Children's Day Program:
+                  <br />
+                  </span>
+                  Celebrated annually with cultural activities aimed at teaching the Nigerian identity, morals, beliefs, and values.
+
+                </p>
+
+                <p>
+            <span className='font-bold text-primary font-inter'>
+            Independence Day Celebration:
+            <br />
+            </span>
+            Celebrates Nigeria's independence with participants mimicking nationalist dress and receiving handmade Nigerian flags.
+
+            </p>
+
+            <p>
+            <span className='font-bold text-primary font-inter'>
+            Digital Resources: 
+            <br />
+            </span>
+            NML provides online access to parts of their collections, virtual tours, educational materials, and digital exhibitions, allowing broader access to their resources.
+
+            </p>
+                
+
+            </div>
+                  
+        </div>
+
+        <div className="h-[100%] font-old  text-[0.75rem] sm:text-[16px] sm:w-1/2 flex flex-col gap-6 font-light w-full  border-black p-8">
+
+            <p>
+                <span className='font-bold text-primary font-inter'>
+                Digital Resources: 
                 <br />
                 </span>
-                Designed to reach the underserved population,  provides empowerment and vocational training to prisoners and extends this program to correctional officers' wives.
+                NML provides online access to parts of their collections, virtual tours, educational materials, and digital exhibitions, allowing broader access to their resources.
 
-          </p>
-            
-</div>
+            </p>
 
-    <div className="h-[100%] font-old  text-[0.75rem] sm:text-[16px] sm:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-4">
 
-         <p>
-              <span className='font-bold font-inter'>
+            <p>
+                <span className='font-bold text-primary font-inter'>
+                Cultural/Religious Festivals: 
+                <br />
+                </span>
+                NML organizes and participates in cultural festivals that celebrate different traditions, heritage, or religious values, bringing together diverse audiences. Some of such events are: 
+                <br />
+                ・Eid-Fitr Program: Celebrates the end of Ramadan with cultural activities that remind the populace of their heritage.
+                <br />
+                ・Christmas Program: Organized for children, featuring Christmas items, cultural activities, games, songs, and dances to celebrate the Yuletide season.
+                <br />
+                ・Cultural Day Program: Promotes Nigerian culture through various cultural activities, showcasing the unity in Nigeria's cultural diversity.
+
+            </p>
+
+
+            <p>
+                      <span className='font-bold text-primary font-inter'>
+                      Special Children Program: 
+                        <br />
+                        </span>
+                        Invites children to the museum or takes the museum to them, teaching cultural practices, skills, and more, giving them a sense of societal belonging.
+                          s, beliefs, and values.
+
+                  </p>
+
+
+                  <p>
+                      
+                        <span className='font-bold text-primary font-inter'>
+                        Prison (Correctional Service) Outreach: 
+                        <br />
+                        </span>
+                        Designed to reach the underserved population,  provides empowerment and vocational training to prisoners and extends this program to correctional officers' wives.
+
+                  </p>
+
+                  <p>
+              <span className='font-bold text-primary font-inter'>
               Art Classes and Workshops:
               <br />
               </span>
@@ -255,9 +253,20 @@ return (
               ・Long Holiday (Arts) Program- Engages secondary students interested in arts with activities like drawing and painting.
               ndmade Nigerian flags.
           </p>
+                    
+         </div>
+
+    </div>
+
+<div className='w-[100%] h-[100%] font-inter flex justify-between bg-background border-primary border-x-[1px] flex-col sm:flex-row columns-2 overflow-hidden'>
+  
+
+    <div className="h-[100%] font-old  text-[0.75rem] sm:text-[16px] sm:w-1/2 flex flex-col gap-6 font-light w-full  border-black p-8">
+
+        
 
             <p>
-                <span className='font-bold font-inter'>
+                <span className='font-bold text-primary font-inter'>
                 Public Events: 
                 <br />
                 </span>
@@ -267,7 +276,7 @@ return (
 
 
             <p>
-                <span className='font-bold font-inter'>
+                <span className='font-bold text-primary font-inter'>
                 Children's Digest Magazine Publication:
                 <br />
                 </span>
@@ -275,31 +284,33 @@ return (
             </p>
 
             <p>
-                <span className='font-bold font-inter'>
+                <span className='font-bold text-primary font-inter'>
                 Exportation of Art Works/Cultural Items:
                 <br />
                 </span>
                 Facilitates the export of art pieces by public and private individuals or organizations to other countries.
             </p>
 
-    </div>
-
-
-<div className="h-[100%] font-old  text-[0.75rem] sm:text-[16px] sm:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-4">
-
-    <p>
-           <span className='font-bold font-inter'>
+            <p>
+           <span className='font-bold text-primary font-inter'>
            Research Facilities: 
             <br />
             </span>
             National Museums Lagos maintains her libraries, archives, and research centers for easy access to academic and historical resources. These facilities support personal development, scholars, students, and the general public in their research endeavors. 
 
-      </p>
+           </p>
 
+
+    </div>
+
+
+<div className="h-[100%] font-old  text-[0.75rem] sm:text-[16px] sm:w-1/2 flex flex-col gap-6 font-light w-full border-black p-8">
+
+   
 
       <p>
           
-            <span className='font-bold font-inter'>
+            <span className='font-bold text-primary font-inter'>
             Temporary Exhibitions:
             <br />
             </span>
@@ -310,7 +321,7 @@ return (
 
 
       <p>
-          <span className='font-bold font-inter'>
+          <span className='font-bold text-primary font-inter'>
           Venue Rental for Events: 
           <br />
           </span>
@@ -318,7 +329,7 @@ return (
       </p>
 
         <p>
-            <span className='font-bold font-inter'>
+            <span className='font-bold text-primary font-inter'>
             Children's Play Park:
             <br />
             </span>
@@ -327,7 +338,7 @@ return (
 
 
         <p>
-            <span className='font-bold font-inter'>
+            <span className='font-bold text-primary font-inter'>
             In sum, the National Museum Lagos is a place of cultural significance, showcasing the richness of Nigeria's cultural heritage and values.
             <br />
             </span>
@@ -337,6 +348,19 @@ return (
 
 
 </div>
+
+    </div>
+
+    <div className='border-primary border-t-[1px] w-[100%] h-fit p-8'>
+      <h2 className='font-bold text-[3rem] pb-4'>MEET THE CURATOR</h2>
+       <div className='font-old pb-8 flex flex-col gap-2'>
+         <Image src={'/assets/curator.webp'} width={300} height={200}/>
+         <p> 
+             Nkechi Olatubosun Adedeji.( Mrs)
+             <br />
+             Curator, National Museum Lagos.
+         </p>
+       </div>
 
     </div>
  </div>

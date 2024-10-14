@@ -110,7 +110,7 @@ const HeaderServer = async() => {
                    style={{
                     paddingLeft:'1rem',
                     // paddingTop: '5px',
-                    // bottom: '4px'
+                    bottom: '4px'
                    }}
                   >
                       <Image src={header.logo.url} alt='logo' width={40} height={40} objectFit='cover' />

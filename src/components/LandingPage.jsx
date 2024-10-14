@@ -28,9 +28,9 @@ const LandingPage = () => {
   return (
     <>
       
-        <div className='w-[100%] h-[85vh] relative border-[1px] border-t-0 border-black flex flex-col lg:flex-row'>
+        <div className='w-[100vw] h-[85vh] justify-center items-center relative border-[1px] border-t-0 border-black flex flex-col lg:flex-row px-10 bg-[#FFFDF5]'>
        
-            <div className="lg:w-[50vw] w-[100%] h-[100%] relative  font-inter text-wrap  p-[2rem] flex flex-col  text-[3rem] md:text-[4rem] truncate lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
+            <div className="lg:w-1/2 w-[100%] h-[100%] relative  font-inter text-wrap  p-[2rem] flex flex-col  text-[3rem] md:text-[4rem] truncate lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
                     {/* <Image
                       alt="national museum"
                       src='/assets/National-Museum.webp'
@@ -94,7 +94,7 @@ const LandingPage = () => {
         
             </div>
      
-          <div className='relative flex border-black text-[0.7rem] md:text-[1rem] h-[100%] lg:w-[50vw] '>
+            <div className='relative flex border-black text-[0.7rem] md:text-[1rem] h-[100%] lg:w-[50vw] '>
        
             
           <Link href='/manuscripts' className="">
@@ -230,7 +230,8 @@ const LandingPage = () => {
               </motion.div>
           </Link>
 
-          </div>
+            </div>
+
          </div>
 
 
@@ -241,7 +242,7 @@ const LandingPage = () => {
             whileInView={{opacity: 1,}}
            //  viewport={{ once: true }}
             transition={{duration: 0.3}}
-         id="museum" className="h-fit w-[100vw] bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex sm:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
+         id="museum" className="h-fit w-[100%] px-10 items-center bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex sm:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
 
               <div
                  
@@ -259,9 +260,23 @@ const LandingPage = () => {
                   Its goal is to bring the museum's offerings to the public, especially those unable to visit, thereby highlighting the importance, value, and pride embedded in Nigerian culture and heritage.
                   </p>
 
-                  <video width="420" height="320" autoPlay muted loop preload="none" >
-                     <source src="/assets/museum.mp4" type="video/mp4" />
-                 </video>
+                  <div className="flex w-[100%] justify-between h-full">
+                      <video width="420" height="320" autoPlay muted loop preload="none" >
+                        <source src="/assets/museum.mp4" type="video/mp4" />
+                    </video>
+
+                     <Link href='/about' className="flex items-end text-[1rem] font-semibold font-inter pr-4">
+                          READ MORE
+                          <motion.svg
+                            whileHover={{scale: 1.4,
+                                        rotate:'45deg'}}
+                            transition={{ease: 'easeInOut', duration: 0.5}}
+                            className="" xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></motion.svg>
+
+                      </Link>
+                  </div>
+
+                
   
 
               </div>

@@ -180,7 +180,7 @@ const [navOpen, setNavOpen] = useState(false)
                </FlyoutLink>
              </li>
 
-            <li className='w-fit h-[100%] top-2 absolute right-10 '>
+            <li className='w-fit h-[100%] top-2 absolute right-10  '>
                <Search/>
 
             </li>
