@@ -19,8 +19,8 @@ const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, proce
 
   return (
     <>
-        <div className="h-[fit] w-[100vw] flex justify-start p-5 border-b-[1px] border-black ">
-          <div className="sm:w-[50vw] w-full flex flex-col gap-8">   
+        <div className="h-fit w-full flex justify-start border-black ">
+          <div className=" w-full flex flex-col gap-8">   
 
           <InstantSearch indexName='pages' searchClient={searchClient} insights>
             <div>
@@ -28,11 +28,11 @@ const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, proce
                 placeholder='Search Archives'
                 classNames={{
                 input:
-                "block w-full p-4  text-sm text-gray-900 border-b border-primary bg-[#fffaf4] focus:ring-primary focus:border-primary dark:text-black",
-                submitIcon: 'absolute right-4 top-6 w-10',
+                "block w-full p-2  text-sm text-primary border-b border-primary bg-background focus:ring-primary focus:border-primary dark:text-background",
+                submitIcon: 'absolute right-2 top-4 w-10',
                 form:'relative text-[0.75rem] font-light',
                 resetIcon:'hidden',
-                placeholder:'font-old text-[18px]'
+                placeHolder:'font-old text-[18px] text-primary'
 
               
               }}/>

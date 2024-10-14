@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { AnimatePresence, easeOut, motion } from "framer-motion"
 import useStore from '../utils/useStore'
+import Search from './Search'
 
 
 const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, manuscripts, government_reports, alternative_heritages, alternative_archival_heritages}) =>{
@@ -178,8 +179,12 @@ const [navOpen, setNavOpen] = useState(false)
                 PHOTOS
                </FlyoutLink>
              </li>
-  
 
+            <li className='w-fit h-[100%] top-2 absolute right-10 '>
+               <Search/>
+
+            </li>
+  
       </ul>
             {/* <li> </li> */}
         </nav>
@@ -219,6 +224,7 @@ const [navOpen, setNavOpen] = useState(false)
                       PHOTOS
                     </FlyoutLink>
                   </li>
+             
              </ul>
             </motion.div>
           </>

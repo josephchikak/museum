@@ -28,7 +28,7 @@ const LandingPage = () => {
   return (
     <>
       
-        <div className='w-[100%] h-[90vh] relative border-[1px] border-t-0 border-black flex flex-col lg:flex-row'>
+        <div className='w-[100%] h-[85vh] relative border-[1px] border-t-0 border-black flex flex-col lg:flex-row'>
        
             <div className="lg:w-[50vw] w-[100%] h-[100%] relative  font-inter text-wrap  p-[2rem] flex flex-col  text-[3rem] md:text-[4rem] truncate lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
                     {/* <Image
@@ -271,7 +271,10 @@ const LandingPage = () => {
           
 
         </motion.div>
-         <Search />
+        <div className="p-4 w-1/2">
+           <Search />
+
+        </div>
 
     
 
