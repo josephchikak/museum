@@ -71,13 +71,13 @@ const AlternativeHeritage = () => {
 
         <div className='flex justify-between flex-col'>
 
-          <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
-            <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2'>ALTERNATIVE ARCHIVAL HERITAGES</h2>
+          <div className='h-fit w-fit flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
+            <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2'>NIGERIAN ALTERNATIVE HERITAGES</h2>
 
             <Image
                 style={{objectFit: "contain"}}
                 className=""
-                width={300} height={100}  src="/assets/Museum.webp" alt="maps" />
+                width={300} height={100}  src="/assets/alternative3.webp" alt="maps" />
                 
                 <p>Page description will be written here</p>                
                     
