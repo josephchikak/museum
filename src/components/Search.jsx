@@ -29,9 +29,9 @@ const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, proce
                 classNames={{
                 input:
                 "block w-full p-2  text-sm border-b text-black border-primary bg-[#FFFDF5] focus:ring-primary focus:border-primary dark:text-primary",
-                submitIcon: 'absolute right-2 top-4 w-10',
+                submitIcon: 'hidden',
                 form:'relative text-[0.75rem] font-light',
-                resetIcon:'hidden',
+                resetIcon:'absolute right-2 top-4 w-10',
                 placeholder:'font-old text-[18px] dark:text-primary'
 
               
@@ -110,11 +110,12 @@ function Hit({ hit,
               {return null}
             }
 
+            console.log(hit.link)
 
           return (
 
            
-              <Link id={card.id} href={`${hit.link}#${card.id}`} onClick={() => handeClick(card.id)} className='flex gap-4 bg-primary text-background font-inter text-[0.75rem] p-2 rounded-md'>
+              <Link id={card.id} href={`/${hit.link}#${card.id}`} onClick={() => handeClick(card.id)} className='flex gap-4 bg-primary text-background font-inter text-[0.75rem] p-2 rounded-md'>
                 <Image width={50} height={20} src={card.image.url} alt={card.image.alt}/>
                 {/* <h1>{hit._highlightResult.description.value}</h1> */}
                 <div className='flex flex-col gap-2'>
