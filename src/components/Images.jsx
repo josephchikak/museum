@@ -18,7 +18,7 @@ const Images = () => {
 
   return (
     <> 
-    <div className="sm:w-[50vw] w-full border-[1px] sm:border-0 border-black relative h-[50vh] flex flex-col bg-background">
+    <div className="lg:w-[50vw] w-full border-[1px] md:border-0 border-black relative h-[50vh] flex flex-col bg-background">
       <Link href='./photos'>
           
           <motion.svg
@@ -29,7 +29,7 @@ const Images = () => {
 
       </Link>
 
-      <h1 className="absolute md:text-[5rem] text-[3rem] top-[40%] left-[30px] font-bold font-inter z-10 lg:text-[8rem]">
+      <h1 className="absolute sm:text-[5rem] text-[3rem] top-[40%] left-[30px] font-bold font-inter z-10 lg:text-[8rem]">
         PHOTO GALLERY
       </h1>
         <div className=" columns-2 flex w-[100%] p-20 h-[100%] relative">
@@ -69,7 +69,7 @@ const Images = () => {
                   objectFit='contain'
                   objectPosition="center"
                   // sizes="(max-width: 768px) 200px, (max-width: 1200px) 200px, 33vw "
-                className=""  src='/assets/Museum3.webp'/>
+                className="invisible lg:invisible"  src='/assets/Museum3.webp'/>
           </div>
 
           <div className="sm:w-[60%] w-[50%] h-[200px] sm:right-[30%] top-[50%] right-[5%]  absolute block">

@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Nav from '@/components/Nav'
 import Link from 'next/link'
 import { section } from 'framer-motion/client'
+import Search from '../../../components/Search'
+
 
 
 //   const SECTIONS = async() => {
@@ -103,10 +105,10 @@ const HeaderServer = async() => {
 
   return (
     // <div>
-        <div className="flex relative justify-center w-fit h-fit z-20">
+        <div className="flex relative items-center justify-center w-[100%] h-fit border-b-2 px-8 z-20">
           {/* <div className='w-[100%] h-[100%] pl-4'> */}
               {/* <div className='w-[100%] top-0 left-0 absolute flex items-center pl-4 h-[100%] overflow-hidden'> */}
-                  <Link  href={'/'} className=' bottom-5 -top-5  sm:top-0 left-0 absolute flex items-start'
+                  <Link  href={'/'} className='justify-self-start	'
                    style={{
                     paddingLeft:'1rem',
                     // paddingTop: '5px',
@@ -119,12 +121,13 @@ const HeaderServer = async() => {
 
           {/* </div> */}
         
-
                 
                <Nav className="" pages={header.nav} alternative_heritages={alternative_heritages} alternative_archival_heritages={alternative_archival_heritages} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports}/>
 
-
-          {/* <div></div> */}
+            
+          <div className='w-fit absolute right-4 p-4 top-2 h-fit invisible lg:visible'>
+             <Search/>
+          </div>
         </div>
     // </div>
   )

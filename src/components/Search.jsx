@@ -28,7 +28,7 @@ const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, proce
                 placeholder='Search Archives'
                 classNames={{
                 input:
-                "block w-full p-2  text-sm border-b text-black border-primary bg-[#FFFDF5] focus:ring-primary focus:border-primary dark:text-primary",
+                "block w-full p-2  text-sm border-[1px] rounded-md text-black border-primary bg-[#FFFDF5] focus:ring-primary focus:border-primary dark:text-primary",
                 submitIcon: 'hidden',
                 form:'relative text-[0.75rem] font-light',
                 resetIcon:'absolute right-2 top-4 w-10',
@@ -110,7 +110,7 @@ function Hit({ hit,
               {return null}
             }
 
-            console.log(hit.link)
+   
 
           return (
 

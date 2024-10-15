@@ -157,7 +157,7 @@ const [navOpen, setNavOpen] = useState(false)
 
 
   return (
-    <div className=' h-[5vh] w-[100vw] font-inter font-light flex justify-center items-center text-primary  sm:text-[0.75rem] text-0.5 border-b-[1px] border-primary uppercase '>
+    <div className=' h-[5vh] w-[100vw] font-inter font-light flex justify-center items-center text-primary  sm:text-[0.75rem] text-0.5 border-primary uppercase '>
         <nav className='p-4 invisible sm:visible'>
           <ul className='flex gap-4 '>
           <li>  <FlyoutLink href='/' >
@@ -180,10 +180,9 @@ const [navOpen, setNavOpen] = useState(false)
                </FlyoutLink>
              </li>
 
-            <li className='w-fit h-[100%] top-2 absolute right-10  '>
-               <Search/>
+            {/* <li className='w-fit margin-r-auto h-[100%]  '>
 
-            </li>
+            </li> */}
   
       </ul>
             {/* <li> </li> */}
