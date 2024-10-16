@@ -108,7 +108,7 @@ const HeaderServer = async() => {
 
   return (
     // <div>
-        <div className="flex relative items-center justify-center w-[100%] h-fit border-b-2 px-8 z-20">
+        <div className="flex relative items-center justify-center w-[100%] h-fit border-b-[1px] border-primary px-8 z-20">
           {/* <div className='w-[100%] h-[100%] pl-4'> */}
               {/* <div className='w-[100%] top-0 left-0 absolute flex items-center pl-4 h-[100%] overflow-hidden'> */}
                   <Link  href={'/'} className='justify-self-start	'

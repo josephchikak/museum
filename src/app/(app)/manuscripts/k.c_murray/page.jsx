@@ -66,11 +66,35 @@ const Pages = async() => {
                 
                 <p className='font-playfair text-[18px]'>Page description will be written here</p>                
                     
-          <div className='pb-8 flex flex-col gap-2'>
+          <div className='pb-8 flex flex-col gap-2 uppercase'>
 
             <h2 className='font-bold text-[1rem]'>SECTIONS</h2>
 
-            <ul>
+            <ul className='flex flex-col gap-2 text-[1rem]'>
+              <li>
+                <Link href={'/manuscripts/k.c_murray/k.c_murray_expeditions'}>
+                K.C. Murray Expedition
+                </Link>
+              </li>
+
+              <li>
+                <Link href={'/manuscripts/k.c_murray/k.c_murray_correspondence'}>
+                K.C. Murray Correspondence 
+                </Link>
+              </li>
+
+              <li>
+                <Link href={'/manuscripts/k.c_murray/k.c_murray_education'}>
+                K.C. Murray Education
+                </Link>
+              </li>
+
+              <li>
+                <Link href={'/manuscripts/k.c_murray/k.c_murray_field_works'}>
+                K.C. Murray Field works 
+                </Link>
+              </li>
+
               <li>
                 <Link href={'/manuscripts/k.c_murray/k.c_murray_notes'}>
                   K.C MURRAY NOTES
