@@ -70,11 +70,11 @@ const Pages = async() => {
 
             <h2 className='font-bold text-[1rem]'>SECTIONS</h2>
             {/* <Pages/> */}
-            <Link href={'/k.c_murray'} >
+            <Link href={'/manuscripts/k.c_murray'} >
               K.C MURRAY MANUSCIPTS
             </Link>
 
-            <Link href={'/benin_expeditions'} >
+            <Link href={'/manuscripts/benin_expeditions'} >
               BENIN EXPEDITIONS
             </Link>
 

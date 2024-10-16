@@ -22,8 +22,7 @@ const FlyoutLink = ({children, href, FlyoutContent, intelligence_reports, maps, 
 
     if(href === '/intelligence_reports'){
       updateSections(intelligence_reports)
-   }else if (href === '/manuscripts'){
-    updateSections(manuscripts)}
+   }
     else if (href === '/maps'){
       updateSections(maps)}
       else if (href === '/government_reports'){

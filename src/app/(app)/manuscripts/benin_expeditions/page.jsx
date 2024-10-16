@@ -57,7 +57,7 @@ const Pages = async() => {
         <div className='flex justify-between flex-col'>
 
           <div className='h-fit w-fit text-primary flex flex-col gap-4 z-10 text-[0.75rem] sm:text-[1rem]'>
-          <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2 '>K.C. MURRAY MANUSCRIPTS</h2>
+          <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2 '>BENIN EXPEDITIONS</h2>
 
           <Image
                 style={{objectFit: "contain"}}
@@ -68,15 +68,7 @@ const Pages = async() => {
                     
           <div className='pb-8 flex flex-col gap-2'>
 
-            <h2 className='font-bold text-[1rem]'>SECTIONS</h2>
-
-            <ul>
-              <li>
-                <Link href={'/manuscripts/k.c_murray/k.c_murray_notes'}>
-                  K.C MURRAY NOTES
-                </Link>
-              </li>
-            </ul>
+            {/* <h2 className='font-bold text-[1rem]'>SECTIONS</h2> */}
             {/* <Pages/> */}
 
           </div>

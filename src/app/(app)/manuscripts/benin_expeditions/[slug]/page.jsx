@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import config from '@payload-config'
 import { getPayloadHMR } from '@payloadcms/next/utilities'
 import React, {cache} from 'react'
-import { RenderBlocks } from '../../../../utils/RenderBlocks'
+import { RenderBlocks } from '@/utils/RenderBlocks'
 import * as motion from "framer-motion/client"
 import { algoliasearch } from 'algoliasearch';
 import Search from '@/components/Search'
