@@ -69,6 +69,19 @@ const FooterServer = async() => {
               King George V. Road, Onikan, P.M.B. 12556, Lagos State.
             </p>
 
+            <div className='flex gap-4'>
+             <Image src='/assets/ifra.png' alt='logo' width={100} height={10} className=' sm:p-4 object-contain h-fit' />
+
+             <Image src='/assets/ifra2.png'alt='logo' width={100} height={10} className=' sm:p-4 object-contain h-fit' />
+
+             <Image src='/assets/CNRS.png'alt='logo' width={100} height={10} className=' sm:p-4 pt-4 object-contain h-fit' />
+
+            </div>
+
+            <div>
+              <p className='text-[0.75rem] sm:p-4'> This project is funded by the French Embassy in Nigeria through IFRA-NIGERIA FSPI PROJECT</p>
+            </div>
+
           
             
         </div>
