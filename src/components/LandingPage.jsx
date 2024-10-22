@@ -248,7 +248,7 @@ const LandingPage = () => {
                  
                  className="h-[100%] lg:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-2">
 
-                 <h2 className="font-inter font-bold sm:text-[5rem]"> THE MUSEUM </h2>
+                 <h2 className="font-inter font-bold text-[5vw]"> THE MUSEUM </h2>
 
                   <p className="w-fit font-old text-[0.75rem] sm:text-[16px]">
                   NATIONAL MUSEUM ONIKAN, LAGOS NIGERIA <br />
