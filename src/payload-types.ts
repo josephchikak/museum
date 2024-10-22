@@ -121,11 +121,13 @@ export interface Page {
 export interface Section {
   layout?:
     | {
+        title?: string | null;
         image?: (number | null) | Media;
-        description?: string | null;
-        year?: string | null;
+        description: string;
+        creation?: string | null;
+        ascension?: string | null;
         file: number | Media;
-        'author(s)'?: string | null;
+        authors?: string | null;
         keyword?: string | null;
         condition?: string | null;
         location?: string | null;
@@ -135,7 +137,7 @@ export interface Section {
         slug?: string | null;
         id?: string | null;
         blockName?: string | null;
-        blockType: 'card';
+        blockType: 'file';
       }[]
     | null;
 }

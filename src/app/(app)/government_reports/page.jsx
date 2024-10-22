@@ -40,7 +40,7 @@ const Government = () => {
        <>
            {
                pages.docs.map((page,i) => { 
-                 return <Link key={i} className='border-background uppercase' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
+                 return <Link key={i} className='border-background uppercase font-semibold text-sm  hover:text-[#006600]' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
  
                })
              }
@@ -51,12 +51,12 @@ const Government = () => {
     
   return (
     <>
-      <div className='w-[100vw] h-fit min-h-[100vh] flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
+      <div className='w-[100vw] min-h-[100vh] h-[100%] flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
 
         <div className='flex justify-between flex-col'>
 
-          <div className='h-fit w-fit text-primary flex flex-col gap-4 z-10 text-[0.75rem] sm:text-[1rem]'>
-            <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2 z-1'>GOVERNMENT</h2>
+          <div className='h-fit w-fit flex flex-col gap-4 z-10 text-[0.75rem] sm:text-[1rem]'>
+            <h2 className='text-[2rem] sm:text-[3rem] font-bold text-primary pb-2 z-1'>GOVERNMENT</h2>
             <Image
                 style={{objectFit: "contain"}}
                 className=""
@@ -66,7 +66,7 @@ const Government = () => {
                     
           <div className='pb-8 flex flex-col gap-2'>
 
-            <h2 className='font-bold text-[1rem]'>SECTIONS</h2>
+            <h2 className='font-normal text-[1rem]'>SECTIONS</h2>
             <Pages/>
 
           </div>

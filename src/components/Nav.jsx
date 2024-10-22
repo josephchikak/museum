@@ -97,8 +97,10 @@ const [navOpen, setNavOpen] = useState(false)
       {
         sections !== undefined && sections.docs.length ?
       
-        <div className='h-fit w-[20vw] p-7 relative  left-1/2 -top-1  bg-background text-primary flex flex-col gap-4 z-20 text-[0.75rem]'>
-            <div className='absolute -top-6 left-0 right-0 h-6 bg-primary'/>
+        <div className='h-fit w-[20vw] p-7 relative left-[80%] -top-20 bg-background text-primary flex flex-col gap-4 z-20 text-[0.75rem]'>
+            <div className='absolute -top-6 left-0 right-0 h-8 bg-primary'/>
+            <div className='absolute -top-8 right-[100%] w-[20%] h-full bg-transparent'/>
+
 
             {/* <div className='absolute -top-10  h-10 w-10 bg-black'/> */}
 

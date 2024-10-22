@@ -18,7 +18,7 @@ const Images = () => {
 
   return (
     <> 
-    <div className="lg:w-[50vw] w-full border-[1px] md:border-0 border-black relative h-[50vh] flex flex-col bg-background">
+    <div className="lg:w-[50%] w-full border-[1px] md:border-0 border-black relative h-[40vw] flex flex-col bg-background">
       <Link href='./photos'>
           
           <motion.svg
@@ -29,7 +29,7 @@ const Images = () => {
 
       </Link>
 
-      <h1 className="absolute sm:text-[5rem] text-[3rem] top-[40%] left-[30px] font-bold font-inter z-10 lg:text-[8rem]">
+      <h1 className="absolute text-[7vw] top-[40%] left-[30px] font-bold font-inter z-10 ">
         PHOTO GALLERY
       </h1>
         <div className=" columns-2 flex w-[100%] p-20 h-[100%] relative">

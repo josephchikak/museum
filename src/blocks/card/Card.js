@@ -1,10 +1,15 @@
 export const Card = {
-    slug: 'card',
+    slug: 'file',
     labels: {
-        singular:'Card',
-        plural: 'Cards'
+        singular:'File',
+        plural: 'Files'
     },
     fields: [
+        {
+            name:'title',
+            label: 'Title',
+            type: 'text',
+        },
         {
             name:'image',
             label: 'Image',
@@ -15,13 +20,18 @@ export const Card = {
             name:'description',
             label: 'Description',
             type: 'textarea',
+            required: true,
             
         },
         {
-            name:'year',
-            label: 'Year',
-            type: 'text',
-            
+            name:'creation',
+            label: 'Year of Creation/Publication',
+            type: 'text',     
+        },
+        {
+            name:'ascension',
+            label: 'Year of Ascension',
+            type: 'text',     
         },
         {
             name:'file',
@@ -31,8 +41,8 @@ export const Card = {
             required: true,
         },
         {
-            name:'author(s)',
-            label: 'Author(s)',
+            name:'authors',
+            label: 'Authors',
             type: 'text',
         
         },
@@ -61,6 +71,7 @@ export const Card = {
             name:'identifiers',
             label: 'Identifiers',
             type: 'text',
+            unique: true
         },
         {
             name:'provenance',

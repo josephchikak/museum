@@ -7,7 +7,7 @@ import CardBlock from '../blocks/card/Server'
 
 
 const blockComponents = {
-    card: CardBlock
+    file: CardBlock
 }
 
 export const RenderBlocks = (props) => {

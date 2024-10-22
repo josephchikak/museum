@@ -41,7 +41,7 @@ const Maps = () => {
        <>
            {
                pages.docs.map((page,i) => { 
-                 return <Link key={i} className='border-background uppercase' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
+                 return <Link key={i} className='border-background uppercase font-semibold text-sm  hover:text-[#006600]' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
  
                })
              }
@@ -53,7 +53,7 @@ const Maps = () => {
 
   return (
     <>
-      <div className='w-[100vw]  h-[100vh]   flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
+      <div className='w-[100vw] min-h-[100vh] h-[100%] flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
 
         <div className='flex justify-between flex-col'>
 

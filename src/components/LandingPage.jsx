@@ -28,9 +28,9 @@ const LandingPage = () => {
   return (
     <>
       
-        <div className='w-[100vw] h-[85vh] justify-center items-center relative border-[1px] border-t-0 border-black flex flex-col lg:flex-row px-10 bg-[#FFFDF5]'>
+        <div className='w-[100vw] h-[90vh] justify-center items-center relative border-[1px] border-t-0 border-black flex flex-col lg:flex-row px-10 bg-[#FFFDF5]'>
        
-            <div className="lg:w-1/2 w-[100%] h-[100%] relative  font-inter text-wrap  p-[2rem] flex flex-col  text-[3rem] md:text-[4rem] truncate lg:text-[5.5rem] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
+            <div className="lg:w-1/2 w-[100%] h-[100%] relative  font-inter p-[2rem] flex flex-col  truncate text-[7vw] bg-no-repeat bg-landing bg-opacity-50 bg-center z-0">
                     {/* <Image
                       alt="national museum"
                       src='/assets/National-Museum.webp'
@@ -51,7 +51,7 @@ const LandingPage = () => {
                   // transition={{duration:0.3}}
                   className="w-[100%]">
 
-                  <h1 className="tracking-wide font-extrabold relative sm:overflow-hidden  z-2"> 
+                  <h1 className="tracking-wide font-extrabold relative sm:overflow-hidden z-2"> 
                       <motion.div
                           // variants={anim} 
                           initial={{y:100}}
@@ -94,7 +94,7 @@ const LandingPage = () => {
         
             </div>
      
-            <div className='relative flex border-black text-[0.7rem] md:text-[1rem] h-[100%] lg:w-[50vw] '>
+            <div className='relative flex border-black text-[0.7rem] md:text-[1rem] h-[100%] md:w-[80vw] lg:w-[50%] '>
        
             
           <Link href='/manuscripts' className="">
@@ -118,7 +118,7 @@ const LandingPage = () => {
                           }}
                             className="absolute invisible lg:visible -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] rounded-t-md lg:rounded-r-none lg:rounded-l-md"/>              
                       </Link>
-                      <div   className="bg-k.c h-1/2 bg-fit bg-cover bg-center w-auto"/>
+                      <div   className="bg-k.c h-1/2 bg-cover bg-center w-auto"/>
                   {/* <Image width={400} height={400} className=" " src="/assets/Africa Art Ema Studios.jpg" alt="" /> */}
                     <h2 className=" font-bold  ">
                       <br />
@@ -242,11 +242,11 @@ const LandingPage = () => {
             whileInView={{opacity: 1,}}
            //  viewport={{ once: true }}
             transition={{duration: 0.3}}
-         id="museum" className="h-fit w-[100%] px-10 items-center bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex lg:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
+         id="museum" className="h-[50%] w-[100%] px-10 items-center bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex lg:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
 
               <div
                  
-                 className="h-[100%]  lg:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-2">
+                 className="h-[100%] lg:w-1/2 flex flex-col gap-6 font-light w-full border-r-[1px] border-black p-2">
 
                  <h2 className="font-inter font-bold sm:text-[5rem]"> THE MUSEUM </h2>
 
@@ -260,7 +260,7 @@ const LandingPage = () => {
                   Its goal is to bring the museum's offerings to the public, especially those unable to visit, thereby highlighting the importance, value, and pride embedded in Nigerian culture and heritage.
                   </p>
 
-                  <div className="flex w-[100%] justify-between h-full">
+                  <div className="flex w-[100%] justify-between h-[100%]">
                       <video width="420" height="320" autoPlay muted loop preload="none" >
                         <source src="/assets/museum.mp4" type="video/mp4" />
                     </video>
@@ -276,9 +276,7 @@ const LandingPage = () => {
                       </Link>
                   </div>
 
-                
-  
-
+              
               </div>
 
         <Images/>
@@ -286,6 +284,7 @@ const LandingPage = () => {
           
 
         </motion.div>
+
         <div className="p-4 w-1/2 ">
            <Search />
 

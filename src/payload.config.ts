@@ -63,6 +63,11 @@ export default buildConfig({
     Header,
     Footer
   ],
+  upload: {
+    limits: {
+      fileSize: 100000000, // 100MB, written in bytes
+    },
+  },
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {

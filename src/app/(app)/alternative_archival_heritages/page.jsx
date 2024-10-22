@@ -53,7 +53,7 @@ const AlternativeHeritage = () => {
        <>
            {
                pages.docs.map((page,i) => { 
-                 return <Link key={i} className='border-background uppercase font-normal pb-2 text-[1rem]' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
+                 return <Link key={i} className='border-background uppercase font-semibold text-sm  hover:text-[#006600] pb-2 ' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
  
                })
              }
@@ -67,12 +67,12 @@ const AlternativeHeritage = () => {
 
   return (
     <>
-      <div className='w-[100vw] h-[100vh] font-inter flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
+      <div className='w-[100vw] min-h-[100vh] h-[100%] font-inter flex justify-between bg-background border-black border-t-[1px] flex-row p-8 '>
 
         <div className='flex justify-between flex-col'>
 
-          <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
-            <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2'>NIERIAN ALTERNATIVE ARCHIVAL HERITAGES</h2>
+          <div className='h-fit w-fit  flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
+            <h2 className='text-[2rem] sm:text-[3rem] font-bold pb-2 text-primary'>NIERIAN ALTERNATIVE ARCHIVAL HERITAGES</h2>
 
             <Image
                 style={{objectFit: "contain"}}
@@ -83,7 +83,7 @@ const AlternativeHeritage = () => {
                     
           <div className='pb-8 flex flex-col gap-2'>
 
-            <h2 className='font-bold text-[1rem]'>SECTIONS</h2>
+            <h2 className='font-normal text-[1rem] '>SECTIONS</h2>
             <Pages/>
 
           </div>

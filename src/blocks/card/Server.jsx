@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import useStore from '../../utils/useStore'
 // import { Document } from 'react-pdf'
 
-const CardBlock = ({image, description, year,file,keyword, condition, location, rights,provenance ,identifiers, id}) => {
+const CardBlock = ({image, description, ascension,creation,file,keyword, condition, location, rights,provenance ,identifiers, id,authors, title}) => {
 
   //  const [open, setOpen] = useState(false)
   const openCard = useStore((state) => state.openCard)
@@ -71,12 +71,13 @@ const open = openCard && cardID === id
              <Image  width={100} height={100} className="" src={image.url} alt="" />
             
 
-            {/* <div className='w-[10px] inline-block min-w-0 h-[20px]'> */}
-                <p className=" text-[0.75rem] truncate"> {description}</p>
-            {/* </div> */}
+            <div className=''> 
+                <h3>{title}</h3>
+                <p className=" text-[0.75rem]"> {description}</p>
+          </div>
 
             <div className="flex justify-between p-4  bottom-2 ">
-                <p>{year}</p>
+                <p>{creation}</p>
 
                 {/* <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1D1911"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg> */}
                 {open ? 
@@ -97,10 +98,20 @@ const open = openCard && cardID === id
               exit={{opaity: 0, y: 15 }}
               transition={{duration: 0.3, ease: 'easeOut'}}
               className='columns-2 font-bold flex w-[30vw] text-[1rem] flex-col gap-4 bg-background'>
-        
+                  
+                  <p className='flex flex-col'>
+                  Year of Creation/Publication <br />
+                  <span className='font-light font-old'>{creation}</span>
+                 </p>
+
                  <p className='flex flex-col'>
                   Keyword: <br />
                   <span className='font-light font-old'>{keyword}</span>
+                 </p>
+
+                 <p className='flex flex-col'>
+                  Year of Ascension: <br />
+                  <span className='font-light font-old'>{ascension}</span>
                  </p>
 
                  <p className='flex flex-col'>
@@ -112,6 +123,7 @@ const open = openCard && cardID === id
                   Location: <br />
                   <span className='font-light font-old'>{location}</span>
                  </p>
+                
 
                  <p className='flex flex-col'>
                   Rights: <br />
