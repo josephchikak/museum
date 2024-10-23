@@ -7,6 +7,12 @@ const nextConfig = {
     removeConsole: true
   },
 
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '100mb',
+    },
+  },
+
 
 
   // Your Next.js config here
