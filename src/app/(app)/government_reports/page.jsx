@@ -6,6 +6,8 @@ import * as motion from "framer-motion/client"
 
 import Image from 'next/image'
 
+export const runtime = 'edge'
+
 const Government = () => {
   
     const anim ={

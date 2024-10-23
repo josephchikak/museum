@@ -5,6 +5,7 @@ import Link from 'next/link'
 import * as motion from "framer-motion/client"
 import { algoliasearch } from 'algoliasearch';
 
+export const runtime = 'edge'
 
 
 import Image from 'next/image'

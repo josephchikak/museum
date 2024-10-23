@@ -6,9 +6,8 @@ import React, {cache} from 'react'
 import LandingPage from "@/components/LandingPage";
 import { algoliasearch } from 'algoliasearch';
 
+export const runtime = 'edge'
 // import {generateSearchAttributes } from 'payload-plugin-algolia'
-
-
 
 const Home = async() => {
 

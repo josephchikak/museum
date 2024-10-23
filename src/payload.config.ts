@@ -90,8 +90,6 @@ export default buildConfig({
         media: {
           prefix: 'media'
         }
-      
- 
         },
         bucket: process.env.S3_BUCKET,
           config: {
