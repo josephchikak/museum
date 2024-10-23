@@ -110,14 +110,14 @@ const LandingPage = () => {
 
                           
               className='manuscripts   p-[1.5rem] bg-background border-[0.5px] relative border-black w-[100%] h-[100%] flex flex-col gap-6 '>
-                  <Link href='/manuscripts' className="">
+                  <div href='/manuscripts' className="">
                               <motion.div
                           whileHover={{
                                         scaleX: 1.5,
                                         x: -8
                           }}
                             className="absolute invisible lg:visible -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] rounded-t-md lg:rounded-r-none lg:rounded-l-md"/>              
-                      </Link>
+                      </div>
                       <div   className="bg-k.c h-1/2 bg-cover bg-center w-auto"/>
                   {/* <Image width={400} height={400} className=" " src="/assets/Africa Art Ema Studios.jpg" alt="" /> */}
                     <h2 className=" font-bold  ">
@@ -155,14 +155,14 @@ const LandingPage = () => {
 
               
                 className='intelligent relative  p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%]  flex flex-col gap-6 '>
-                <Link href='/intelligence_reports'>
+                <div href='/intelligence_reports'>
                     <motion.div 
                         whileHover={{
                             scaleX: 1.5,
                             x: -8
                         }}
                       className="absolute invisible lg:visible -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] lg:rounded-l-md  lg:rounded-r-none  rounded-t-md "/> 
-                  </Link>
+                  </div>
                       <div className="bg-intelligence h-1/2 bg-fit bg-cover bg-center w-auto"/>
                         
               {/* <Image width={20} height={50}  className="h-[50%] bg-slate-200" src="" alt="" /> */}
@@ -199,14 +199,14 @@ const LandingPage = () => {
                     transition={{ease:'easeOut'}}
               
                 className='maps relative p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%] flex flex-col gap-6'>
-                  <Link href='/maps'>
+                  <div href='/maps'>
                       <motion.div
                         whileHover={{
                           scaleX: 1.5,
                           x: -8
                         }}
                       className="absolute invisible lg:visible -z-5 -top-8 left-1/4 lg:top-1/2 lg:-left-8 bg-primary w-[3rem] h-[2rem] lg:w-[2rem] lg:h-[6rem] rounded-t-md  lg:rounded-r-none  lg:rounded-l-md"/>
-                  </Link>
+                  </div>
                       <div className="bg-maps h-1/2 bg-cover bg-center w-auto"/>
 
                {/* <Image width={20} height={50} className="h-[50%] bg-slate-200" src="" alt="" /> */}
@@ -242,7 +242,7 @@ const LandingPage = () => {
             animate={{opacity: 1,}}
            //  viewport={{ once: true }}
             transition={{duration: 0.3}}
-         id="museum" className="h-[50%] w-[100%] px-10 items-center bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex lg:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
+         id="museum" className="h-[100%] w-[100%] px-10 items-center bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex lg:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
 
               <div
                  

@@ -118,7 +118,7 @@ const HeaderServer = async() => {
                     bottom: '4px'
                    }}
                   >
-                      <Image src={header.logo.url} alt='logo' width={40} height={40} objectFit='cover' />
+                      <Image src={header.logo.url} alt='logo' width={40} height={40} />
                   </Link>
               {/* </div> */}
 

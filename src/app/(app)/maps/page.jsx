@@ -4,7 +4,6 @@ import config from '@payload-config'
 import Link from 'next/link'
 import * as motion from "framer-motion/client"
 
-export const runtime = 'edge'
 
 import Image from 'next/image'
 
