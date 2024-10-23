@@ -52,7 +52,7 @@ const open = openCard && cardID === id
                     onClick={()=> handleOpen(id)}
                      style={{ 
                       width: open ? '100vw' : '180px',
-                      height:  open ? 'fit-content' : '350px',
+                      height:  open ? 'fit-content' : 'fit-content',
                       position:  open ? 'absolute' : 'relative',
                       zIndex: open ? 100 : 0,
                       left: 0,
