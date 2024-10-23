@@ -54,31 +54,31 @@ const LandingPage = () => {
                   <h1 className="tracking-wide font-extrabold relative sm:overflow-hidden z-2"> 
                       <motion.div
                           // variants={anim} 
-                          initial={{y:100}}
-                          whileInView={{y:0}}
+                          initial={{y:200}}
+                          animate={{y:0}}
                           viewport={{once: true}}
                           transition={{duration: 0.8, delay:0.2, ease: "easeOut"}}
                           className="absolutue z-2"> NATIONAL</motion.div> </h1>
 
                   <h1 className="tracking-wide font-extrabold relative sm:overflow-hidden z-2"> 
                       <motion.div
-                                initial={{y:100}}
-                                whileInView={{y:0}}
+                                initial={{y:200}}
+                                animate={{y:0}}
                                 viewport={{once: true}}
                                 transition={{duration: 0.8, delay:0.5, ease: "easeOut"}}
                           className="absolutue z-2">MUSEUM</motion.div> </h1>
 
                   <h1 className="tracking-wide font-extrabold relative sm:overflow-hidden z-2"> 
                       <motion.div
-                          initial={{y:100}}
-                          whileInView={{y:0}}
+                          initial={{y:200}}
+                          animate={{y:0}}
                           viewport={{once: true}}
                           transition={{duration: 0.8, delay:0.7, ease: "easeOut"}}   
                           className="absolutue z-2">LAGOS</motion.div> </h1>
 
                   <h2 className="font-inter tracking-wide font-extrabold relative sm:overflow-hidden z-2"> 
                       <motion.div
-                          initial={{y:100}}
+                          initial={{y:200}}
                           animate={{y:0}}
                           viewport={{once: true}}
                           transition={{duration: 0.8, delay:1, ease: "easeOut"}}   
@@ -239,7 +239,7 @@ const LandingPage = () => {
        {/* about */}
         <motion.div
             initial={{opacity: 0, }}
-            whileInView={{opacity: 1,}}
+            animate={{opacity: 1,}}
            //  viewport={{ once: true }}
             transition={{duration: 0.3}}
          id="museum" className="h-[50%] w-[100%] px-10 items-center bg-background p-[1.5rem] text-[0.75rem] sm:text-[1rem] flex lg:flex-row flex-col pt-10 pb-10 gap-4 border-b-black border-b-[1px]">
