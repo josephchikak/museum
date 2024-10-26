@@ -51,10 +51,11 @@ const IntelligenceReports = () => {
        <>
            {
                pages.docs.map((page,i) => { 
-                 return <Link key={i} className='border-background uppercase pb-2 text-[1rem] font-semibold text-sm  hover:text-[#006600]' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
+                 return <Link key={i} className='border-background uppercase font-semibold text-sm  hover:text-[#006600]' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
  
                })
              }
+       
        
        </>
    )

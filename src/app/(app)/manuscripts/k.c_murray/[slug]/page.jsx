@@ -9,20 +9,15 @@ import Search from '@/components/Search'
 import Link from 'next/link'
 
 
-// const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY);
-
-
 const Page =  async({params}) => {
-  
-  const result = await params
 
-  const slug = result.slug
+  const {slug} = await params
 
-    let page
-
-    page = await queryPageBySlug({
-        slug,
+   const page = await queryPageBySlug({
+        slug
     })
+
+    // console.log(page)
 
     if (!page) {
         return notFound()
@@ -42,7 +37,6 @@ const Page =  async({params}) => {
         }
       }
 
-      // console.log(page)
       
   return (
     <article>
@@ -50,10 +44,7 @@ const Page =  async({params}) => {
 
     <div className='w-[100vw]  min-h-[100vh]  overflow-hidden h-[100%] font-inter flex flex-col gap-4 p-8'>
          <h1 className='sm:text-[3rem] text-[2rem] font-bold pb-8 uppercase' >{page.internalName}</h1>
-          {/* <Groups title='title'/>
-          <Groups title='title'/>
-          <Groups title='title'/> */}
-
+       
         <RenderBlocks blocks={page.pageSection.layout}/>
 
           
@@ -86,7 +77,7 @@ export default Page
 
   
 const queryPageBySlug = cache(async({slug}) => {
-    
+
   const parsedSlug = decodeURIComponent(slug)
 
   const payload = await getPayloadHMR({ config })
@@ -114,8 +105,8 @@ export const generateStaticParams = async() => {
       limit: 1000,
   })
 
+
   return pages.docs
-      ?.filter((doc) => {
-          return doc.slug !== 'index'
-      }).map(({slug}) => slug)
+      ?.map((doc) => ({slug: doc.slug}))
+      
   }

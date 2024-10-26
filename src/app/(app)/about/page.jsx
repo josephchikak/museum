@@ -65,7 +65,7 @@ return (
          
 
             {/* <div className=' w-[200px] h-full'> */}
-              <Image src={'/assets/National-Museum.webp'} width={500} height={200}  objectFit='contain' loading='lazy'/>
+              <Image alt='the national museum lagos' src={'/assets/National-Museum.webp'} width={500} height={200}  objectFit='contain' loading='lazy'/>
 
             {/* </div> */}
 
@@ -354,7 +354,7 @@ return (
     <div className='border-primary border-t-[1px] w-[100%] h-fit p-8'>
       <h2 className='font-bold text-[3rem] pb-4'>MEET THE CURATOR</h2>
        <div className='font-old pb-8 flex flex-col gap-2'>
-         <Image src={'/assets/curator.webp'} width={300} height={200}/>
+         <Image  alt='the curator' src={'/assets/curator.webp'} width={300} height={200}/>
          <p> 
              Nkechi Olatubosun Adedeji.( Mrs)
              <br />

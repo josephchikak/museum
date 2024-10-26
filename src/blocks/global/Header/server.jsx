@@ -114,7 +114,6 @@ const HeaderServer = async() => {
                   <Link  href={'/'} className='justify-self-start	'
                    style={{
                     paddingLeft:'1rem',
-                    // paddingTop: '5px',
                     bottom: '4px'
                    }}
                   >

@@ -79,11 +79,6 @@ export default buildConfig({
     },
   }),
   sharp,
-  express: {
-    json: {
-      limit: 100000000,
-    },
-  },
   plugins: [
     s3Storage({
       collections: {

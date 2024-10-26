@@ -97,7 +97,7 @@ const [navOpen, setNavOpen] = useState(false)
       {
         sections !== undefined && sections.docs.length ?
       
-        <div className='h-fit w-[20vw] p-7 relative left-[80%] -top-20 bg-background text-primary flex flex-col gap-4 z-20 text-[0.75rem]'>
+        <div className='h-fit w-[300px] p-7 relative left-[80%] -top-20 bg-background text-primary flex flex-col gap-4 z-20 text-[0.75rem]'>
             <div className='absolute -top-6 left-0 right-0 h-8 bg-primary'/>
             <div className='absolute -top-8 right-[100%] w-[20%] h-full bg-transparent'/>
 
@@ -128,7 +128,7 @@ const [navOpen, setNavOpen] = useState(false)
     // console.log(intelligence_reports)
    
   
-      return <div className=' h-fit w-[50vw] sm:h-fit sm:w-[18vw] p-7 relative bg-primary text-background flex flex-col gap-4 z-20 text-[0.75rem]'>
+      return <div className=' h-fit w-[50vw] sm:h-fit sm:w-[300px] p-7 relative bg-primary text-background flex flex-col gap-4 z-20 text-[0.75rem]'>
         {/* {navOpen : */}
             <div className='absolute -top-6 left-0 right-0 h-6 bg-background'/>
 
@@ -160,7 +160,7 @@ const [navOpen, setNavOpen] = useState(false)
 
 
   return (
-    <div className=' h-[5vh] w-[100vw] font-inter font-light flex justify-center items-center text-primary  sm:text-[0.75rem] text-0.5 border-primary uppercase '>
+    <div className=' h-[5vh] w-[100%] font-inter font-light flex justify-center items-center text-primary  sm:text-[0.75rem] text-0.5 border-primary uppercase '>
         <nav className='p-4 invisible sm:visible'>
           <ul className='flex gap-4 '>
           <li>  <FlyoutLink href='/' >
@@ -191,7 +191,7 @@ const [navOpen, setNavOpen] = useState(false)
             {/* <li> </li> */}
         </nav>
 
-        <nav className='visible sm:invisible w-fit absolute right-0 pr-2 z-20'>
+        <nav className='visible sm:invisible relative pr-2 z-20'>
           {navOpen ? 
           <>
              <svg onClick={() => setNavOpen(!navOpen)} xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1D1911"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
@@ -205,24 +205,24 @@ const [navOpen, setNavOpen] = useState(false)
             // zIndex: 100,
             }}
             transition={{duration: 0.2, ease: 'easeOut'}}
-            // className='z-20'
+            className=' right-2 absolute'
             >
-               <ul className='flex gap-4 absolute flex-col right-0 z-10 bg-background p-2 w-[50vw] justify-around h-[30vh] text-[0.75rem]'>
-                   <li className='bg-primary text-background p-2  rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/' >
+               <ul className='flex gap-4 absolute flex-col right-0 z-10 bg-background p-2 w-[80vw] justify-around h-[50vh] text-[0.75rem]'>
+                   <li className='bg-primary text-background p-2 h-[20%] flex justify-center items-center rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/' >
                       HOME
                     </FlyoutLink>
                   </li>
-                  <li className='bg-primary text-background p-2 rounded-md' onClick={() => setNavOpen(false)}>
+                  <li className='bg-primary text-background p-2  h-[20%] flex justify-center items-center  rounded-md' onClick={() => setNavOpen(false)}>
                     <FlyoutLink href='/about' onClick={() => setNavOpen(false)}>
                         ABOUT
                     </FlyoutLink>
                   </li>
-                  <li  className='bg-primary text-background p-2  rounded-md' >  <FlyoutLink href='#' FlyoutContent={SECTIONS} >
+                  <li  className='bg-primary text-background p-2   h-[20%] flex justify-center items-center  rounded-md' >  <FlyoutLink href='#' FlyoutContent={SECTIONS} >
                       SECTIONS
                     </FlyoutLink>
                   </li>
 
-                  <li className='bg-primary text-background p-2  rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/photos' >
+                  <li className='bg-primary text-background p-2  h-[20%] flex justify-center items-center   rounded-md' onClick={() => setNavOpen(false)}>  <FlyoutLink href='/photos' >
                       PHOTOS
                     </FlyoutLink>
                   </li>

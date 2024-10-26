@@ -2,28 +2,19 @@ import { notFound } from 'next/navigation'
 import config from '@payload-config'
 import { getPayloadHMR } from '@payloadcms/next/utilities'
 import React, {cache} from 'react'
-import { RenderBlocks } from '../../../../utils/RenderBlocks'
+import { RenderBlocks } from '@/utils/RenderBlocks'
 import * as motion from "framer-motion/client"
 import { algoliasearch } from 'algoliasearch';
 import Search from '@/components/Search'
 import Link from 'next/link'
 
 
-// const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY);
+const Page =  async({params}) => {
 
+  const {slug} = await params
 
-const Page =  async({ params}) => {
-  
-    // const params = await params.slug
-
-    const result = await params
-
-    const slug = result.slug
-
-    let page
-
-    page = await queryPageBySlug({
-        slug,
+   const page = await queryPageBySlug({
+        slug
     })
 
     if (!page) {
@@ -44,30 +35,15 @@ const Page =  async({ params}) => {
         }
       }
 
-      const client = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.NEXT_PUBLIC_ALGOLIA_WRITE_API_KEY);
-
-      // const response = await client.saveObject({
-      //   indexName:'pages',
-      //   body:{
-      //     objectID: page.id,
-      //     page,
-      //    link:`intelligence_reports/${page.slug}`},
-      // })
-  
-
-      // console.log(page)
       
   return (
     <article>
 
-         
-    <div className='w-fit min-h-[100vh]  overflow-hidden h-[100%] font-inter flex flex-col gap-4 p-8'>
-         <h1 className='sm:text-[3rem] text-[2rem] font-bold pb-8 uppercase' >{page.internalName}</h1>
-   
-          <div className='grid sm:grid-cols-5 grid-cols-2  ' >
-               <RenderBlocks blocks={page.pageSection.layout}/>
 
-          </div>
+    <div className='w-[100vw]  min-h-[100vh]  overflow-hidden h-[100%] font-inter flex flex-col gap-4 p-8'>
+         <h1 className='sm:text-[3rem] text-[2rem] font-bold pb-8 uppercase' >{page.internalName}</h1>
+       
+        <RenderBlocks blocks={page.pageSection.layout}/>
 
           
         </div>
@@ -99,7 +75,7 @@ export default Page
 
   
 const queryPageBySlug = cache(async({slug}) => {
-    
+
   const parsedSlug = decodeURIComponent(slug)
 
   const payload = await getPayloadHMR({ config })
@@ -127,14 +103,8 @@ export const generateStaticParams = async() => {
       limit: 1000,
   })
 
-  // const serverState = await getServerState(
-  //   <Page params={params} />,
-  //   { renderToString }
-  // );
 
   return pages.docs
-      ?.filter((doc) => {
-          return doc.slug !== 'index'
-      }).map(({slug}) => slug)
+      ?.map((doc) => ({slug: doc.slug}))
       
   }

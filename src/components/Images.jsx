@@ -37,16 +37,18 @@ const Images = () => {
           <Image 
               fill
               objectPosition="center"
+              alt="navigation image"
         
               //  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw "
-              className="absolute object-contain object-contain" src='/assets/Intelligence.webp'/>
+              className="absolute object-contain" src='/assets/Intelligence.webp'/>
           </div>
 
           <div className=" w-[200px] sm:h-[70%] h-[200px] top-2 right-[30px]  absolute block">
           <Image 
                   fill
                   objectPosition="center"
-                 
+              alt="navigation image"
+
                   // sizes="(max-width: 768px) 200px, (max-width: 1200px) 200px, 33vw "
                 className=" object-contain"  src='/assets/K.C-Murray.webp'/>
           </div>
@@ -55,6 +57,7 @@ const Images = () => {
           <Image  
                   fill
           
+              alt="navigation image"
 
                   // sizes="(max-width: 768px) 200px, (max-width: 1200px) 200px, 33vw "
                 className=" object-contain"  src='/assets/National-Museum.webp'/>
@@ -63,6 +66,7 @@ const Images = () => {
           <div className="w-[100%] h-[150px] sm:-bottom-[45px] invisible sm:visible sm:left-[200px] -bottom-[20px] left-[10px]  absolute block">
            
           <Image  
+              alt="navigation image"
                   fill
                   objectPosition="center"
                   // sizes="(max-width: 768px) 200px, (max-width: 1200px) 200px, 33vw "
@@ -73,6 +77,7 @@ const Images = () => {
           
           <Image 
                   fill
+              alt="navigation image"
             
                   // sizes="(max-width: 768px) 200px, (max-width: 1200px) 200px, 33vw "
                 className=" object-contain"  src='/assets/alternative2.webp'/>
