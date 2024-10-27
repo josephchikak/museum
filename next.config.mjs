@@ -4,10 +4,6 @@ import { withPayload } from '@payloadcms/next/withPayload'
 const nextConfig = {
 
 
-  distDir: "build",
-
-
-
   // Your Next.js config here
 }
 
