@@ -1,2 +1,2 @@
-[install]
+[phases.install]
 cmd ='npm run install --force'
