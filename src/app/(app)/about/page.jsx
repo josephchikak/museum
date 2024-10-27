@@ -7,7 +7,6 @@ import * as motion from "framer-motion/client"
 import React from 'react'
 import Image from 'next/image'
 
-
 const About = () => {
 
 
