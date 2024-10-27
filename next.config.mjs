@@ -4,7 +4,7 @@ import { withPayload } from '@payloadcms/next/withPayload'
 const nextConfig = {
 
 
-
+  distDir: "build",
 
 
 
