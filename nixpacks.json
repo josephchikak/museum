@@ -5,9 +5,6 @@
       },
       "build": {
         "cmd": "npm run build"
-      },
-      "start": {
-        "cmd": "node /app/dist/index.js"
       }
     }
   }
