@@ -44,6 +44,7 @@ const Page =  async({params}) => {
          <h1 className='sm:text-[3rem] text-[2rem] font-bold pb-8 uppercase' >{page.internalName}</h1>
        
         <RenderBlocks blocks={page.pageSection.layout}/>
+     
 
           
         </div>

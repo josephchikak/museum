@@ -17,8 +17,6 @@ const Page =  async({params}) => {
         slug
     })
 
-    // console.log(page)
-
     if (!page) {
         return notFound()
     }
