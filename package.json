@@ -14,7 +14,7 @@
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "pages:build": "npx @cloudflare/next-on-pages"
-  },
+  }, 
   "dependencies": {
     "@algolia/autocomplete-js": "^1.17.4",
     "@payloadcms/db-postgres": "^3.0.0-beta.118",
