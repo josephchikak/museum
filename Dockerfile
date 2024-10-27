@@ -20,10 +20,13 @@ RUN \
 
 # Rebuild the source code only when needed
 FROM base AS builder
-WORKDIR /app
-COPY nixpacks.json /artifacts/thegameplan.json
+WORKDIR /app d
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
+FROM node:16
+WORKDIR /app
+COPY nixpacks.json /artifacts/thegameplan.json
 
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
