@@ -21,6 +21,7 @@ RUN \
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
+COPY nixpacks.json /artifacts/thegameplan.json
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
