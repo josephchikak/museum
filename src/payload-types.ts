@@ -125,7 +125,7 @@ export interface Section {
         image?: (number | null) | Media;
         description: string;
         creation?: string | null;
-        ascension?: string | null;
+        accession?: string | null;
         file: number | Media;
         authors?: string | null;
         keyword?: string | null;

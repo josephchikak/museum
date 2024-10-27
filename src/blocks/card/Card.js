@@ -29,8 +29,8 @@ export const Card = {
             type: 'text',     
         },
         {
-            name:'ascension',
-            label: 'Year of Ascension',
+            name:'accession',
+            label: 'Year of Accession',
             type: 'text',     
         },
         {

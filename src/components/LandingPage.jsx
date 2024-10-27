@@ -109,7 +109,7 @@ const LandingPage = () => {
               transition={{ease:'easeOut'}}
 
                           
-              className='manuscripts   p-[1.5rem] bg-background border-[0.5px] relative border-black w-[100%] h-[100%] flex flex-col gap-6 '>
+              className='manuscripts   p-[1.5rem] bg-background border-[0.5px] relative border-black w-[100px] sm:w-[250px] h-[100%] flex flex-col gap-6 '>
                   <div href='/manuscripts' className="">
                               <motion.div
                           whileHover={{
@@ -126,7 +126,7 @@ const LandingPage = () => {
                     </h2>
         
                   <p className=" font-light  font-old text-[0.75rem] md:text-[16px]">
-                      This is a brief description of what is in the file
+                      These are manuscripts that are not published. Some are hand written and some are typed. There are varieties of manuscript , there are under Education , Field work, Correspondence, notes and Expedition.
                    </p>
 
                    <div> 
@@ -154,7 +154,7 @@ const LandingPage = () => {
                     transition={{ease:'easeOut'}}
 
               
-                className='intelligent relative  p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%]  flex flex-col gap-6 '>
+                className='intelligent relative  p-[1.5rem] bg-background border-[0.5px] border-black w-[100px] sm:w-[250px] h-[100%]  flex flex-col gap-6 '>
                 <div href='/intelligence_reports'>
                     <motion.div 
                         whileHover={{
@@ -198,7 +198,7 @@ const LandingPage = () => {
                     }}
                     transition={{ease:'easeOut'}}
               
-                className='maps relative p-[1.5rem] bg-background border-[0.5px] border-black  w-[100%] h-[100%] flex flex-col gap-6'>
+                className='maps relative p-[1.5rem] bg-background border-[0.5px] border-black w-[100px] sm:w-[250px] h-[100%] flex flex-col gap-6'>
                   <div href='/maps'>
                       <motion.div
                         whileHover={{
@@ -215,7 +215,8 @@ const LandingPage = () => {
                     </h2>
         
                   <p className=" font-light font-old text-[0.75rem] md:text-[16px]">
-                      This is a brief description of what is in the file
+                   These are maps of Nigeria showing  the visual representation of areas, vegetation ,geographical locations, water ways and other relevant information like railway line, boundaries and so on
+ 
                    </p>
 
                    <div > 

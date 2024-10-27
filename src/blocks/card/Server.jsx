@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import useStore from '../../utils/useStore'
 // import { Document } from 'react-pdf'
 
-const CardBlock = ({image, description, ascension,creation,file,keyword, condition, location, rights,provenance ,identifiers, id,authors, title}) => {
+const CardBlock = ({image, description, accession,creation,file,keyword, condition, location, rights,provenance ,identifiers, id,authors, title}) => {
 
   //  const [open, setOpen] = useState(false)
   const openCard = useStore((state) => state.openCard)
@@ -110,8 +110,8 @@ const open = openCard && cardID === id
                  </p>
 
                  <p className='flex flex-col'>
-                  Year of Ascension: <br />
-                  <span className='font-light font-old'>{ascension}</span>
+                  Year of Accession: <br />
+                  <span className='font-light font-old'>{accession}</span>
                  </p>
 
                  <p className='flex flex-col'>

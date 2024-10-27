@@ -58,7 +58,9 @@ const Archaeology = () => {
           <div className='h-fit w-fit text-primary flex flex-col gap-4 text-[0.75rem] sm:text-[1rem]'>
             <h2 className='text-[2rem] sm:text-[3rem]font-bold pb-2'>ETHNOGRAPHY AND ARCHAEOLOGY</h2>
 
-            <h2>COMING SOON</h2>
+              <p>
+              Archaeology focuses on the study of the ancient and recent human past through material remains, i.e. items that have been left behind, while Ethnography studies groups of living people and their culture by participant observation.
+              </p>
             <Pages/>
       
             </div> 

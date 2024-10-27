@@ -24,7 +24,7 @@ const FooterServer = async() => {
 
   return (
     <>
-      <div className='w-[100vw] h-fit grid-cols-3 grid bg-primary border-black border-t-[1px] flex-col gap-4 sm:flex-row p-8 '>
+      <div className='w-[100vw] h-fit grid-cols-3 grid bg-primary border-black border-t-[1px] pt-8 flex-col gap-4 sm:flex-row p-8 '>
  
         <div className='flex justify-between flex-col gap-4'>
 
@@ -86,15 +86,24 @@ const FooterServer = async() => {
             King George V. Road, Onikan, P.M.B. 12556, Lagos State.
           </p>
 
-          <p className='text-[0.75rem] gap-2 flex items-center sm:p-4'>
-            <Image src={'/assets/Facebook icons.png'} alt='facebook logo' width={40} height={40} />
-            National Museum Onikan Lagos 
-          </p>
+            <Link href='https://www.facebook.com/NationalMuseumOnikanLagos' target='_blank'>
+              <p className='text-[0.75rem] gap-2 flex items-center sm:p-4'>
 
-          <p className='text-[0.75rem] gap-2 items-center flex sm:p-4'>
-          <Image src={'/assets/Instagram icon.png'} alt='instagram logo' width={40} height={40} />
-            nationalmuseum_lagos
-          </p>
+                  <Image src={'/assets/Facebook icons.png'} alt='facebook logo' width={30} height={30} />
+                  National Museum Onikan Lagos 
+                </p>
+
+            </Link>
+
+
+            <Link href='https://www.instagram.com/nationalmuseum_lagos' target='_blank'>
+                <p className='text-[0.75rem] gap-2 items-center flex sm:p-4'>
+
+                <Image src={'/assets/Instagram icon.png'} alt='instagram logo' width={30} height={30} />
+                nationalmuseum_lagos
+                </p>
+            </Link>
+         
 
           <div>
             <p className='text-[0.75rem] sm:p-4'> This project is funded by the French Embassy in Nigeria through IFRA-NIGERIA FSPI PROJECT</p>
