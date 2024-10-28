@@ -127,7 +127,7 @@ const HeaderServer = async() => {
                <Nav className="" pages={header.nav} alternative_heritages={alternative_heritages} alternative_archival_heritages={alternative_archival_heritages} intelligence_reports={intelligence_reports} manuscripts={manuscripts} maps={maps} government_reports={government_reports}/>
 
             
-          <div className='w-fit absolute right-4 p-4 top-2 h-fit invisible lg:visible'>
+          <div className='w-fit absolute right-4 p-4 top-4 h-fit invisible lg:visible'>
              <Search/>
           </div>
         </div>

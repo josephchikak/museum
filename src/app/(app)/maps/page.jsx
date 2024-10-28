@@ -67,7 +67,7 @@ const Maps = () => {
                 className=""
                 width={300} height={100}  src="/assets/Museum5.webp" alt="maps" />
                 
-                <p>Page description will be written here</p>                
+                <p>These are maps of Nigeria showing  the visual representation of areas, vegetation ,geographical locations, water ways and other relevant information like railway line, boundaries.</p>                
           
             <Pages/>
             </div> 

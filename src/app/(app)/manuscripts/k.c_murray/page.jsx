@@ -65,7 +65,9 @@ const Pages = async() => {
                 className=""
                 width={300} height={100}  src="/assets/Museum.webp" alt="maps" />
                 
-                <p className='font-playfair text-[18px]'>Page description will be written here</p>                
+                <p className='font-playfair text-[18px]'>
+                 K.C. Murray manuscripts are not published. Some are hand written and some are typed. There are varieties of manuscript, such as Education, Field work, Correspondence, Notes and Expeditions.
+                  </p>                
                     
           <div className='pb-8 flex flex-col gap-2 uppercase'>
 

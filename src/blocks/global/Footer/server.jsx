@@ -2,13 +2,10 @@ import React from 'react'
 import { getPayloadHMR } from '@payloadcms/next/utilities'
 import config from '@payload-config'
 import Link from 'next/link'
-
-
 import Image from 'next/image'
 
 const FooterServer = async() => {
 
-   
   const payload = await getPayloadHMR({config})
 
   const footer = await payload.findGlobal({
@@ -24,9 +21,9 @@ const FooterServer = async() => {
 
   return (
     <>
-      <div className='w-[100vw] h-fit grid-cols-3 grid bg-primary border-black border-t-[1px] pt-8 flex-col gap-4 sm:flex-row p-8 '>
+      <div className='w-[100vw] h-fit grid grid-cols-1 sm:grid-cols-3 bg-primary border-black border-t-[1px] pt-8 gap-4 p-8'>
  
-        <div className='flex justify-between flex-col gap-4'>
+        <div className='flex justify-between flex-col gap-4 w-fit h-fit'>
 
           <div className='h-fit w-fit text-background flex flex-col gap-4 z-10 text-[0.75rem] uppercase'>
             <h2 className='text-[1rem] text-black'>Quick Links</h2>
@@ -41,10 +38,13 @@ const FooterServer = async() => {
 
         </div>
 
-        <div className='flex h-[50%] justify-end  w-fit gap-4 flex-col text-background' >
+        <div className='flex h-[100%] w-[100%]  gap-4 flex-col text-background' >
      
-           <p className='text-background w-[100%] font-light mt-4 text-[0.75rem]'>
-              {footer["copyrightNot ice"]}
+           <p className='text-background break-words font-light mt-4 text-[0.75rem]'>
+           Copyright 2024 @ National Museum Lagos, <br />
+           All the works published in this archive are licensed under <br />
+           Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+              {/* {footer["copyrightNot ice"]} */}
             </p>
               
             <div>
@@ -87,11 +87,11 @@ const FooterServer = async() => {
           </p>
 
             <Link href='https://www.facebook.com/NationalMuseumOnikanLagos' target='_blank'>
-              <p className='text-[0.75rem] gap-2 flex items-center sm:p-4'>
-
+              <div className='text-[0.75rem] gap-2 flex items-center sm:p-4'>
+                
                   <Image src={'/assets/Facebook icons.png'} alt='facebook logo' width={30} height={30} />
                   National Museum Onikan Lagos 
-                </p>
+                </div>
 
             </Link>
 
@@ -104,12 +104,6 @@ const FooterServer = async() => {
                 </p>
             </Link>
          
-
-          <div>
-            <p className='text-[0.75rem] sm:p-4'> This project is funded by the French Embassy in Nigeria through IFRA-NIGERIA FSPI PROJECT</p>
-          </div>
-
-      
 
 
           </div>
