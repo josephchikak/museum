@@ -72,8 +72,8 @@ const open = openCard && cardID === id
             
 
             <div className=''> 
-                <h3 className='text-semibold uppercase'>{title}</h3>
-                <p className=" text-[0.75rem] text-light"> {description}</p>
+                <h3 className='font-semibold uppercase'>{title}</h3>
+                <p className=" text-[0.75rem] font-light"> {description}</p>
           </div>
 
             <div className="flex justify-between p-4  bottom-2 ">
