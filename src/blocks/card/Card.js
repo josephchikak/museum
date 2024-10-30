@@ -20,7 +20,7 @@ export const Card = {
             name:'description',
             label: 'Description',
             type: 'textarea',
-            required: true,
+            // required: true,
             
         },
         {

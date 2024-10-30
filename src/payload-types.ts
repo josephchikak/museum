@@ -123,7 +123,7 @@ export interface Section {
     | {
         title?: string | null;
         image?: (number | null) | Media;
-        description: string;
+        description?: string | null;
         creation?: string | null;
         accession?: string | null;
         file: number | Media;
