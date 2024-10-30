@@ -68,7 +68,7 @@ const open = openCard && cardID === id
                 width: open ? '30%' : '100%'
               }}
               className='flex flex-col gap-8 w-[100%] min-w-0 h-[100%] justify-between relative '>
-             <Image  width={100} height={100} className="" src={image.url} alt="" />
+             <Image  width={100} height={100} className="" src={image?.url} alt="" />
             
 
             <div className=''> 
