@@ -15,7 +15,7 @@ export const Card = {
             label: 'Image',
             type: 'upload',
             relationTo: 'media'
-        },ss
+        },
         {
             name:'description',
             label: 'Description',
