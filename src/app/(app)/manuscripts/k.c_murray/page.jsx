@@ -37,13 +37,12 @@ const Pages = async() => {
 
   return (
       <>
-          {
+           {
                pages.docs.map((page,i) => { 
                  return <Link key={i} className='border-background uppercase font-semibold text-sm  hover:text-[#006600]' href={`/${page.nav[0].link}`}> {page.nav[0].label}</Link>
  
                })
              }
-       
       
       </>
   )
@@ -74,31 +73,31 @@ const Pages = async() => {
             <h2 className='font-normal text-[1rem]'>SECTIONS</h2>
 
             <ul className='flex flex-col gap-2 text-[1rem]'>
-              <li>
-                <Link href={'/manuscripts/k.c_murray/k.c_murray_expeditions'}>
+              <li className='border-background uppercase font-semibold text-sm  hover:text-[#006600]'>
+                <Link  href={'/manuscripts/k.c_murray/k.c_murray_expeditions'}>
                 K.C. Murray Expedition
                 </Link>
               </li>
 
-              <li>
+              <li className='border-background uppercase font-semibold text-sm  hover:text-[#006600]'>
                 <Link href={'/manuscripts/k.c_murray/k.c_murray_correspondence'}>
                 K.C. Murray Correspondence 
                 </Link>
               </li>
 
-              <li>
+              <li className='border-background uppercase font-semibold text-sm  hover:text-[#006600]'>
                 <Link href={'/manuscripts/k.c_murray/k.c_murray_education'}>
                 K.C. Murray Education
                 </Link>
               </li>
 
-              <li>
+              <li className='border-background uppercase font-semibold text-sm  hover:text-[#006600]'>
                 <Link href={'/manuscripts/k.c_murray/k.c_murray_field_works'}>
                 K.C. Murray Field works 
                 </Link>
               </li>
 
-              <li>
+              <li className='border-background uppercase font-semibold text-sm  hover:text-[#006600]'>
                 <Link href={'/manuscripts/k.c_murray/k.c_murray_notes'}>
                   K.C MURRAY NOTES
                 </Link>

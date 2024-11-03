@@ -34,7 +34,7 @@ const Page =  async({params}) => {
           width:'100vw',
         }
       }
-
+console.log()
       
   return (
     <article>
