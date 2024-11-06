@@ -147,15 +147,8 @@ export interface Section {
  */
 export interface Map {
   id: number;
-  internalName: string;
-  nav?:
-    | {
-        label?: string | null;
-        link?: string | null;
-        id?: string | null;
-      }[]
-    | null;
-  pageSection?: Section;
+  image?: (number | null) | Media;
+  description?: string | null;
   updatedAt: string;
   createdAt: string;
 }
